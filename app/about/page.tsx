@@ -8,29 +8,30 @@ import { person } from "@/lib/site"
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Ashlea Davies — business analysis, digital transformation and operational readiness expertise.",
+  description:
+    "About Ashlea Davies — business analysis, operational readiness, workforce optimisation and digital transformation expertise.",
 }
 
 const values = [
   {
     icon: Compass,
     title: "Clarity from complexity",
-    body: "Placeholder copy. I turn ambiguous problems into clear, prioritised roadmaps that stakeholders trust and teams can act on.",
+    body: "I translate complex operating environments into clear delivery plans, practical roadmaps and actions that teams can confidently execute.",
   },
   {
     icon: HeartHandshake,
     title: "People-first change",
-    body: "Placeholder copy. Lasting transformation happens when the people doing the work are engaged, prepared and confident.",
+    body: "I focus on the people impacted by change, ensuring leaders, frontline teams and stakeholders are prepared, engaged and supported through transition.",
   },
   {
     icon: ShieldCheck,
     title: "Readiness over risk",
-    body: "Placeholder copy. Rigorous operational readiness protects customers and colleagues through every go-live.",
+    body: "I use structured readiness assessment, risk identification and deployment planning to protect customers, employees and service continuity through go-live.",
   },
   {
     icon: Sparkles,
     title: "Outcomes that endure",
-    body: "Placeholder copy. I focus on measurable, sustainable value — not change for its own sake.",
+    body: "I focus on sustainable business outcomes, improving workforce capability, operational performance, data quality and adoption beyond implementation.",
   },
 ]
 
@@ -39,7 +40,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About"
-        title="Turning complex change into confident, measurable transformation"
+        title="Turning operational complexity into confident, measurable transformation"
       />
 
       <section className="mx-auto max-w-6xl px-5 pb-16 pt-8 lg:px-8">
@@ -54,6 +55,7 @@ export default function AboutPage() {
                 className="aspect-[4/5] w-full object-cover"
               />
             </div>
+
             <div className="mt-6 rounded-2xl border border-border bg-card p-6">
               <p className="text-sm font-semibold">{person.name}</p>
               <p className="mt-1 text-sm text-muted-foreground">{person.roles.join(" · ")}</p>
@@ -63,19 +65,28 @@ export default function AboutPage() {
 
           <div className="space-y-6 text-pretty text-lg leading-relaxed text-foreground/80">
             <p>
-              Placeholder biography copy. I&apos;m a Business Analyst, Digital Transformation Consultant and Operational
-              Readiness Specialist with over a decade of experience helping enterprises navigate complex change. My work
-              sits at the intersection of strategy, operations and technology.
+              I&apos;m a Business Analyst, Digital Transformation Consultant and Operational Readiness
+              Specialist with experience delivering enterprise change across healthcare, aged care,
+              customer operations and technology-enabled transformation.
             </p>
+
             <p>
-              Placeholder copy. I partner with leaders to understand the real problem beneath the brief, then design
-              pragmatic, evidence-led solutions. From discovery and requirements to target operating models and
-              go-live readiness, I bring structure and momentum to programmes of every scale.
+              My background spans frontline service coordination, operational leadership, deployment,
+              adoption and business analysis. That means I understand transformation from both sides:
+              the strategy being designed and the people expected to make it work in day-to-day operations.
             </p>
+
             <p>
-              Placeholder copy. My clients span public sector, financial services and large operational networks. Across
-              all of them, I&apos;m known for calm delivery under pressure, clear communication, and an unwavering focus
-              on the people who make change stick.
+              Across Australian Unity Home Health, I supported large-scale operational transformation,
+              including Team-Based Care, workforce optimisation, Salesforce Health Cloud readiness,
+              Procura and AlayaCare environments, customer service alignment, capability uplift and
+              deployment planning.
+            </p>
+
+            <p>
+              My work is grounded in practical delivery. I help organisations assess readiness, uncover
+              operational risk, improve data quality, align workforce capability to customer demand, and
+              create change that can actually be adopted by the teams delivering services.
             </p>
 
             <div className="grid gap-4 pt-4 sm:grid-cols-2">
