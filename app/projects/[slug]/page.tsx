@@ -15,7 +15,6 @@ import {
   Workflow,
   Cpu,
 } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { getProject, projects } from "@/lib/projects"
 
 export function generateStaticParams() {
@@ -69,7 +68,6 @@ export default async function ProjectPage({
 
   return (
     <article>
-      {/* Header */}
       <div className="mx-auto max-w-4xl px-5 pt-12 lg:px-8 lg:pt-16">
         <Link
           href="/projects"
@@ -78,17 +76,19 @@ export default async function ProjectPage({
           <ArrowLeft className="size-4" />
           All projects
         </Link>
+
         <div className="mt-6 flex items-center gap-3">
           <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
             {project.category}
           </span>
         </div>
+
         <h1 className="mt-4 text-balance font-serif text-4xl font-semibold tracking-tight sm:text-5xl">
           {project.title}
         </h1>
+
         <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">{project.summary}</p>
 
-        {/* Meta */}
         <dl className="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-border bg-card p-6 sm:grid-cols-3">
           <div className="flex items-start gap-3">
             <Building2 className="mt-0.5 size-4 text-primary" />
@@ -97,6 +97,7 @@ export default async function ProjectPage({
               <dd className="text-sm font-medium">{project.client}</dd>
             </div>
           </div>
+
           <div className="flex items-start gap-3">
             <CalendarDays className="mt-0.5 size-4 text-primary" />
             <div>
@@ -104,6 +105,7 @@ export default async function ProjectPage({
               <dd className="text-sm font-medium">{project.year}</dd>
             </div>
           </div>
+
           <div className="flex items-start gap-3">
             <Clock className="mt-0.5 size-4 text-primary" />
             <div>
@@ -113,7 +115,6 @@ export default async function ProjectPage({
           </div>
         </dl>
 
-        {/* KPI cards */}
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
           {project.kpis.map((kpi) => (
             <div key={kpi.label} className="rounded-2xl border border-border bg-card p-5 text-center">
@@ -124,7 +125,6 @@ export default async function ProjectPage({
         </div>
       </div>
 
-      {/* Body */}
       <div className="mx-auto max-w-4xl space-y-12 px-5 py-14 lg:px-8">
         <Section icon={Lightbulb} title="Overview">
           <p>{project.overview}</p>
@@ -184,7 +184,6 @@ export default async function ProjectPage({
         </Section>
       </div>
 
-      {/* Next project */}
       <div className="mx-auto max-w-4xl px-5 pb-20 lg:px-8">
         <Link
           href={`/projects/${next.slug}`}
@@ -194,10 +193,11 @@ export default async function ProjectPage({
             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Next case study</p>
             <p className="mt-1 font-serif text-xl font-semibold">{next.title}</p>
           </div>
-          <Button variant="outline" size="lg" render={<span />} className="pointer-events-none">
+
+          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-colors group-hover:bg-secondary">
             Read next
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-          </Button>
+          </span>
         </Link>
       </div>
     </article>

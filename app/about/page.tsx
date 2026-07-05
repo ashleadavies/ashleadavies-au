@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Compass, HeartHandshake, ShieldCheck, Sparkles } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { PageHeader } from "@/components/page-header"
 import { person } from "@/lib/site"
 
@@ -52,6 +51,7 @@ export default function AboutPage() {
                 alt={`Portrait of ${person.name}`}
                 width={560}
                 height={700}
+                priority
                 className="aspect-[4/5] w-full object-cover"
               />
             </div>
@@ -103,11 +103,12 @@ export default function AboutPage() {
             </div>
 
             <div className="pt-4">
-              <Link href="/contact">
-                <Button size="lg">
-                  Work with me
-                  <ArrowRight className="size-4" />
-                </Button>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                Work with me
+                <ArrowRight className="size-4" />
               </Link>
             </div>
           </div>
