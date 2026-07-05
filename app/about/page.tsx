@@ -16,22 +16,22 @@ const values = [
   {
     icon: Compass,
     title: "Clarity from complexity",
-    body: "I translate complex operating environments into clear delivery plans, practical roadmaps and actions that teams can confidently execute.",
+    body: "I turn unclear problems, competing priorities and messy operational detail into clear plans teams can actually use.",
   },
   {
     icon: HeartHandshake,
-    title: "People-first change",
-    body: "I focus on the people impacted by change, ensuring leaders, frontline teams and stakeholders are prepared, engaged and supported through transition.",
+    title: "Change that respects people",
+    body: "I bring frontline experience into transformation work, so change is designed with the people delivering services, not just for them.",
   },
   {
     icon: ShieldCheck,
-    title: "Readiness over risk",
-    body: "I use structured readiness assessment, risk identification and deployment planning to protect customers, employees and service continuity through go-live.",
+    title: "Readiness before go-live",
+    body: "I focus on operational readiness, risk, data, workforce capability and service continuity before change reaches customers and teams.",
   },
   {
     icon: Sparkles,
-    title: "Outcomes that endure",
-    body: "I focus on sustainable business outcomes, improving workforce capability, operational performance, data quality and adoption beyond implementation.",
+    title: "Practical outcomes",
+    body: "I care about measurable, sustainable improvement: better processes, stronger adoption, cleaner data and confident operations.",
   },
 ]
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About"
-        title="Turning operational complexity into confident, measurable transformation"
+        title="I help organisations turn complex transformation into practical, operationally ready change"
       />
 
       <section className="mx-auto max-w-6xl px-5 pb-16 pt-8 lg:px-8">
@@ -65,28 +65,29 @@ export default function AboutPage() {
 
           <div className="space-y-6 text-pretty text-lg leading-relaxed text-foreground/80">
             <p>
-              I&apos;m a Business Analyst, Digital Transformation Consultant and Operational Readiness
-              Specialist with experience delivering enterprise change across healthcare, aged care,
-              customer operations and technology-enabled transformation.
+              My career has grown from frontline service coordination through to operational leadership,
+              deployment, adoption and business analysis. That mix gives me a practical view of change:
+              I understand the strategy being designed, but also the pressure on the people expected to
+              make it work.
             </p>
 
             <p>
-              My background spans frontline service coordination, operational leadership, deployment,
-              adoption and business analysis. That means I understand transformation from both sides:
-              the strategy being designed and the people expected to make it work in day-to-day operations.
+              Across Australian Unity Home Health, I supported large-scale transformation across
+              workforce optimisation, Team-Based Care, Salesforce Health Cloud readiness, Procura and
+              AlayaCare environments, customer service alignment, capability uplift and deployment
+              planning.
             </p>
 
             <p>
-              Across Australian Unity Home Health, I supported large-scale operational transformation,
-              including Team-Based Care, workforce optimisation, Salesforce Health Cloud readiness,
-              Procura and AlayaCare environments, customer service alignment, capability uplift and
-              deployment planning.
+              I work best where change is complex, cross-functional and operationally sensitive. I help
+              leaders understand what needs to be true before go-live, where risk is sitting, what data
+              needs attention, and how teams can be prepared without overwhelming the business.
             </p>
 
             <p>
-              My work is grounded in practical delivery. I help organisations assess readiness, uncover
-              operational risk, improve data quality, align workforce capability to customer demand, and
-              create change that can actually be adopted by the teams delivering services.
+              My approach is structured, calm and practical. I bring clarity to messy problems, connect
+              technology decisions back to real service delivery, and help organisations create change
+              that is not only delivered, but adopted.
             </p>
 
             <div className="grid gap-4 pt-4 sm:grid-cols-2">
@@ -102,10 +103,12 @@ export default function AboutPage() {
             </div>
 
             <div className="pt-4">
-              <Button render={<Link href="/contact" />} size="lg">
-                Work with me
-                <ArrowRight className="size-4" />
-              </Button>
+              <Link href="/contact">
+                <Button size="lg">
+                  Work with me
+                  <ArrowRight className="size-4" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
