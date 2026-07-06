@@ -7,6 +7,14 @@ import { projects } from "@/lib/projects"
 
 export default function HomePage() {
   const featured = projects.slice(0, 3)
+  const capabilities = [
+    "Business Analysis",
+    "Deployment Consultant",
+    "Deployment & Adoption Lead",
+    "Community Liason Manager",
+    "Service Consultant",
+    "Home Care Worker",
+  ]
 
   return (
     <>
@@ -15,7 +23,7 @@ export default function HomePage() {
           <div className="animate-fade-in-up">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
               <span className="size-1.5 rounded-full bg-highlight" />
-              Available for new opportunities
+              Business Analyst • Operational Readiness Consultant • Deployment & Adoption Lead
             </span>
 
             <h1 className="mt-6 text-balance font-serif text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
@@ -26,6 +34,10 @@ export default function HomePage() {
               {person.roles.join("  ·  ")}
             </p>
 
+            <h2 className="mt-6 text-balance text-2xl font-semibold leading-tight tracking-tight text-foreground sm:text-3xl">
+              Helping organisations by making complex transformation practical, operational and sustainable.
+            </h2>
+
             <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-foreground/80">
               {person.tagline}
             </p>
@@ -35,23 +47,23 @@ export default function HomePage() {
                 href="/projects"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
               >
-                View my work
+                Explore case studies
                 <ArrowRight className="size-4" />
               </Link>
 
               <Link
-                href="/contact"
+                href="/resume"
                 className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
               >
-                Get in touch
+                View resume
               </Link>
             </div>
 
-            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2">
-              {person.roles.map((r) => (
-                <li key={r} className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <CheckCircle2 className="size-4 text-primary" />
-                  {r}
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+              {capabilities.map((capability) => (
+                <li key={capability} className="flex items-center gap-2 rounded-full border border-border/70 bg-background/50 px-3 py-2 text-sm text-muted-foreground">
+                  <CheckCircle2 className="size-4 shrink-0 text-primary" />
+                  {capability}
                 </li>
               ))}
             </ul>
@@ -71,8 +83,8 @@ export default function HomePage() {
             </div>
 
             <div className="absolute -bottom-5 -left-5 hidden rounded-2xl border border-border bg-card px-5 py-4 shadow-lg sm:block">
-              <p className="font-serif text-2xl font-semibold text-primary">5 roles</p>
-              <p className="text-xs text-muted-foreground">Progressive AU career</p>
+              <p className="font-serif text-2xl font-semibold text-primary">Transformation delivery</p>
+              <p className="text-xs text-muted-foreground">Across service, deployment and change adoption</p>
             </div>
           </div>
         </div>
@@ -119,11 +131,11 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-5 pb-20 lg:px-8">
         <div className="overflow-hidden rounded-3xl border border-border bg-primary px-8 py-14 text-center text-primary-foreground lg:px-16">
           <h2 className="mx-auto max-w-2xl text-balance font-serif text-3xl font-semibold tracking-tight sm:text-4xl">
-            Need someone who can bridge operations, technology and people?
+            Turning strategy into operational success.
           </h2>
 
           <p className="mx-auto mt-4 max-w-xl text-pretty leading-relaxed text-primary-foreground/85">
-            Let&apos;s talk about business analysis, deployment readiness and change that can actually be adopted.
+            I partner with organisations to translate strategy into practical delivery through business analysis, operational readiness, stakeholder engagement and sustainable adoption.
           </p>
 
           <div className="mt-8 flex justify-center">
@@ -131,7 +143,7 @@ export default function HomePage() {
               href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-card/90"
             >
-              Start a conversation
+              Let’s connect
               <ArrowRight className="size-4" />
             </Link>
           </div>

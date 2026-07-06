@@ -14,12 +14,12 @@ export const person = {
 
   roles: [
     "Business Analyst",
-    "Deployment Consultant",
+    "Operational Readiness Consultant",
     "Deployment & Adoption Lead",
   ],
 
   tagline:
-    "Helping organisations deliver complex technology transformation by connecting business needs, operational readiness and people.",
+    "I bridge the gap between strategy, customer needs and frontline operations through business analysis, operational readiness, stakeholder engagement and deployment. My focus is ensuring change is practical, measurable and embraced by the people delivering services, while improving outcomes for the customers they support.",
 
   location: "Lockhart, NSW, Australia",
 
@@ -46,18 +46,18 @@ export const person = {
 export const stats = [
   {
     value: "45,000+",
-    label: "Customer records prepared for enterprise migration",
+    label: "Customer records reviewed and prepared for migration",
   },
   {
     value: "3,000+",
-    label: "Employees supported through change",
+    label: "Employees supported through transformation and adoption",
   },
   {
-    value: "53",
-    label: "Neighbourhood deployments",
+    value: "53+",
+    label: "Neighbourhood deployments delivered across Australia",
   },
   {
-    value: "5",
-    label: "Progressive roles at Australian Unity",
+    value: "Transformation Specialist",
+    label: "Healthcare & Community Services",
   },
 ]
