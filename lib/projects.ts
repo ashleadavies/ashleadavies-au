@@ -31,7 +31,7 @@ export const projects: Project[] = [
     tags: ["Operational Readiness", "Workforce Planning", "Change Adoption"],
     kpis: [
       { value: "National", label: "Operating model rollout" },
-      { value: "53+", label: "Neighbourhood deployments" },
+      { value: "24+", label: "Neighbourhood deployments" },
       { value: "Future-ready", label: "CRM transformation foundation" },
     ],
     overview:
@@ -58,7 +58,6 @@ export const projects: Project[] = [
     ],
     technology: [
       "Procura",
-      "Biarri Workforce Optimisation",
       "Salesforce Health Cloud",
       "Miro",
       "Visio",
@@ -83,7 +82,7 @@ export const projects: Project[] = [
     tags: ["Data Readiness", "Salesforce", "Platform Migration"],
     kpis: [
       { value: "45,000+", label: "Customer records prepared" },
-      { value: "First", label: "Neighbourhood go-live supported" },
+      { value: "First", label: "53 Neighbourhood go-live supported" },
       { value: "National", label: "Rollout framework established" },
     ],
     overview:
@@ -218,7 +217,6 @@ export const projects: Project[] = [
       "Confluence",
       "Miro",
       "Visio",
-      "Power BI",
       "Microsoft Teams",
     ],
     lessons:
@@ -233,10 +231,10 @@ export const projects: Project[] = [
       "Supported the integration of an acquired healthcare provider by migrating customers, employees and operational services into a single national care management platform.",
     year: "2025",
     client: "National Home Health Provider",
-    duration: "4 months",
+    duration: "2 months",
     tags: ["Acquisition Integration", "Customer Migration", "Workforce Integration"],
     kpis: [
-      { value: "52", label: "Neighbourhoods supported" },
+      { value: "40+", label: "Neighbourhoods supported" },
       { value: "2", label: "Organisations unified" },
       { value: "1", label: "Operational platform" },
     ],
@@ -270,8 +268,6 @@ export const projects: Project[] = [
       "Outlook",
       "Jira",
       "Confluence",
-      "Visio",
-      "Miro",
     ],
     lessons:
       "Successfully integrating an acquired organisation requires more than migrating data. The greatest challenges are operational, requiring strong stakeholder engagement, disciplined planning and a deep understanding of frontline service delivery.",
@@ -279,7 +275,7 @@ export const projects: Project[] = [
 
   {
     slug: "civica-eligibility-restoration",
-    title: "Civica Eligibility Restoration",
+    title: "Vendor Eligibility Restoration",
     category: "Operational Improvement Initiative",
     summary:
       "Restored access to a critical eligibility checking service by investigating root cause, coordinating vendor engagement and improving operational governance.",
@@ -315,8 +311,6 @@ export const projects: Project[] = [
       { value: "Improved", label: "Governance and procedure visibility" },
     ],
     technology: [
-      "Civica ECF",
-      "Salesforce",
       "ServiceNow",
       "SharePoint",
       "Microsoft Teams",
