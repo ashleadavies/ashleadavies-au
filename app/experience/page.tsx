@@ -8,56 +8,89 @@ export const metadata: Metadata = {
 
 const experience = [
   {
-    period: "2022 — Present",
-    role: "Principal Digital Transformation Consultant",
-    company: "Independent (placeholder)",
-    summary:
-      "Placeholder copy. Lead consultant on enterprise transformation programmes, owning discovery, target operating model design and operational readiness.",
-    highlights: [
-      "Delivered 40+ enterprise programmes across public and private sectors",
-      "Established readiness frameworks adopted as organisational standards",
-      "Advised C-suite stakeholders on transformation strategy and risk",
-    ],
-    tags: ["Transformation", "Readiness", "Strategy"],
-  },
-  {
-    period: "2019 — 2022",
-    role: "Senior Business Analyst",
-    company: "Global Consultancy (placeholder)",
-    summary:
-      "Placeholder copy. Led business analysis workstreams on large-scale platform and process transformations for global clients.",
-    highlights: [
-      "Owned requirements across multi-market CRM and ERP migrations",
-      "Introduced reusable analysis and process harmonisation templates",
-      "Mentored a growing team of analysts across engagements",
-    ],
-    tags: ["Business Analysis", "CRM", "ERP"],
-  },
-  {
-    period: "2016 — 2019",
+    period: "Jan 2026 – Jun 2026",
     role: "Business Analyst",
-    company: "Financial Services (placeholder)",
+    company: "Technology, Digital & Transformation",
     summary:
-      "Placeholder copy. Delivered process improvement and change initiatives across operations and customer service.",
+      "Fixed-term secondment supporting enterprise initiatives across customer experience, contact centre technology and operational transformation.",
     highlights: [
-      "Mapped and optimised high-volume back-office processes",
-      "Supported regulatory change programmes end to end",
-      "Built dashboards to track performance and adoption",
+      "Delivered business analysis across Salesforce Health Cloud and Genesys Cloud initiatives",
+      "Led requirements workshops and stakeholder engagement across business and technology teams",
+      "Supported process mapping, UAT coordination, defect management and implementation documentation",
+      "Supported customer experience initiatives including IVR transformation and service enhancement programs",
     ],
-    tags: ["Process", "Change", "Analytics"],
+    tags: ["Business Analysis", "Salesforce Health Cloud", "Genesys Cloud", "UAT"],
   },
   {
-    period: "2014 — 2016",
-    role: "Operations Analyst",
-    company: "Operations Provider (placeholder)",
+    period: "Jan 2023 – Jun 2026 substantive role",
+    role: "Deployment Consultant",
+    company: "Home Health Transformation",
     summary:
-      "Placeholder copy. Analysed operational data to improve planning, capacity and service levels across a national network.",
+      "Substantive role supporting major transformation, implementation and business readiness initiatives across Home Health.",
     highlights: [
-      "Improved forecasting accuracy and resource allocation",
-      "Standardised operational reporting across regions",
-      "Partnered with front-line teams on continuous improvement",
+      "Supported enterprise-wide Salesforce Health Cloud transformation",
+      "Coordinated business readiness across nationally distributed operational teams",
+      "Led data remediation activities impacting approximately 43,500 customer records",
+      "Supported operational integration of acquired businesses",
+      "Delivered deployment, stakeholder engagement and transition support across transformation programs",
     ],
-    tags: ["Operations", "Forecasting", "Reporting"],
+    tags: ["Deployment", "Business Readiness", "Data Remediation", "Stakeholder Engagement"],
+  },
+  {
+    period: "Jul 2024 – Jan 2025",
+    role: "Deployment & Adoption Lead",
+    company: "Secondment",
+    summary:
+      "Promotional secondment leading deployment and workforce transformation activities across national operations.",
+    highlights: [
+      "Led deployment activities across 24 operational departments nationally",
+      "Supported workforce transformation impacting 3,200 employees and 32,000 clients",
+      "Delivered workforce optimisation initiatives improving scheduling efficiency and utilisation",
+      "Developed Tableau reporting dashboards for workforce performance and capacity planning",
+    ],
+    tags: ["Workforce Optimisation", "Reporting", "Deployment Leadership"],
+  },
+  {
+    period: "Feb 2022 – Jan 2023",
+    role: "Community Liaison Manager",
+    company: "Operational Leadership",
+    summary:
+      "Operational leadership role responsible for service delivery, workforce leadership and stakeholder management.",
+    highlights: [
+      "Managed multidisciplinary service delivery teams",
+      "Led client-centred care planning and service delivery activities",
+      "Managed escalations, complaints and service quality outcomes",
+      "Supported workforce capability, onboarding and operational performance initiatives",
+    ],
+    tags: ["Service Delivery", "Stakeholder Management", "Operational Leadership"],
+  },
+  {
+    period: "May 2019 – Feb 2022",
+    role: "Service Coordinator",
+    company: "Home Health Operations",
+    summary:
+      "Coordinated workforce scheduling and service delivery across regional operations.",
+    highlights: [
+      "Coordinated workforce scheduling and service delivery",
+      "Managed service escalations and operational improvement activities",
+      "Supported workforce continuity throughout COVID-19 operational challenges",
+      "Built strong stakeholder relationships across clinical and operational teams",
+    ],
+    tags: ["Scheduling", "Service Coordination", "Operations"],
+  },
+  {
+    period: "2015 – 2019",
+    role: "Earlier Roles",
+    company: "Frontline Care & Community Services",
+    summary:
+      "Earlier frontline roles across disability support, community care, nursing support and diversional therapy.",
+    highlights: [
+      "Community Care Coordinator, LiveBetter, 2018–2019",
+      "Disability Support Worker, CareWest / LiveBetter, 2016–2018",
+      "Assistant in Nursing, Warren GWAHS, 2015–2017",
+      "Diversional Therapist, Gilgandra GWAHS, 2016–2017",
+    ],
+    tags: ["Frontline Care", "Community Services", "Customer Support"],
   },
 ]
 
@@ -66,8 +99,8 @@ export default function ExperiencePage() {
     <>
       <PageHeader
         eyebrow="Experience"
-        title="A decade of leading enterprise change"
-        description="A career built on structured analysis, calm delivery and a relentless focus on measurable outcomes."
+        title="A career built across frontline operations, deployment, transformation and business analysis"
+        description="More than seven years progressing through operational, leadership, deployment and transformation roles, with experience across healthcare, community services, aged care, Salesforce Health Cloud, Genesys Cloud, operational readiness and customer-focused change."
       />
 
       <section className="mx-auto max-w-4xl px-5 pb-20 pt-8 lg:px-8">
