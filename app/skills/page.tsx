@@ -3,64 +3,126 @@ import { BarChart3, Boxes, Brain, ClipboardList, GitBranch, Users } from "lucide
 import { PageHeader } from "@/components/page-header"
 
 export const metadata: Metadata = {
-  title: "Skills",
-  description: "Core capabilities across business analysis, transformation and operational readiness.",
+  title: "Capabilities",
+  description: "Capabilities that turn strategy into operational outcomes",
 }
 
 const skillGroups = [
   {
     icon: ClipboardList,
     title: "Business Analysis",
-    skills: ["Requirements engineering", "Process mapping", "Stakeholder management", "Gap analysis", "User stories"],
+    skills: [
+      "Business requirements",
+      "Process mapping",
+      "Current & future state",
+      "Stakeholder engagement",
+      "User stories",
+      "Functional specifications",
+      "UAT planning",
+      "Traceability",
+    ],
   },
   {
     icon: GitBranch,
-    title: "Transformation",
-    skills: ["Target operating models", "Change management", "Roadmapping", "Benefits realisation", "Governance"],
+    title: "Operational Readiness",
+    skills: [
+      "Readiness assessments",
+      "Go-live planning",
+      "Cutover planning",
+      "Hypercare",
+      "Risk management",
+      "Operational acceptance",
+      "Workforce readiness",
+      "Business continuity",
+    ],
   },
   {
     icon: Boxes,
-    title: "Operational Readiness",
-    skills: ["Cutover planning", "Readiness assessments", "Hypercare", "Runbooks", "Contingency planning"],
+    title: "Transformation Delivery",
+    skills: [
+      "Change implementation",
+      "Service transformation",
+      "Business improvement",
+      "Deployment planning",
+      "Benefits realisation",
+      "Cross-functional delivery",
+      "Governance",
+    ],
   },
   {
     icon: Brain,
-    title: "AI & Automation",
-    skills: ["Use-case framing", "RPA delivery", "Human-in-the-loop design", "Data requirements", "Model governance"],
+    title: "Customer & Service Improvement",
+    skills: [
+      "Customer journey improvement",
+      "Service design",
+      "Process improvement",
+      "Operational efficiency",
+      "Customer experience",
+      "Continuous improvement",
+      "Data-driven decision making",
+    ],
   },
   {
     icon: BarChart3,
-    title: "Data & Insight",
-    skills: ["KPI design", "Power BI / Tableau", "Demand analysis", "Reporting", "Data quality"],
+    title: "Data & Insights",
+    skills: [
+      "Data migration readiness",
+      "Data quality",
+      "Reporting",
+      "KPI development",
+      "Power BI",
+      "Tableau",
+      "Excel",
+      "Business insights",
+    ],
   },
   {
     icon: Users,
-    title: "Leadership",
-    skills: ["Workshop facilitation", "Coaching & mentoring", "Executive communication", "Cross-functional delivery"],
+    title: "Leadership & Facilitation",
+    skills: [
+      "Workshops",
+      "Executive stakeholder engagement",
+      "Vendor management",
+      "Cross-functional leadership",
+      "Facilitation",
+      "Decision making",
+      "Coaching",
+    ],
   },
 ]
 
-const proficiency = [
-  { label: "Business Analysis", value: 95 },
-  { label: "Digital Transformation", value: 90 },
-  { label: "Operational Readiness", value: 92 },
-  { label: "Stakeholder Engagement", value: 88 },
-  { label: "AI & Automation", value: 80 },
+const specialistExperience = [
+  "Salesforce Health Cloud",
+  "Genesys Cloud",
+  "CRM Transformation",
+  "Customer & Employee Data Migration",
+  "Operational Readiness",
+  "Enterprise Deployment",
+  "Service Transformation",
+  "Business Analysis",
+  "Healthcare Transformation",
+  "Contact Centre Transformation",
 ]
 
 const tools = [
   "Jira",
   "Confluence",
-  "Azure DevOps",
-  "Power BI",
-  "Tableau",
+  "Salesforce",
+  "Salesforce Health Cloud",
+  "Genesys Cloud",
   "Miro",
   "Visio",
+  "Tableau",
+  "Power BI",
+  "Microsoft Excel",
+  "SharePoint",
+  "Microsoft Teams",
   "ServiceNow",
-  "Salesforce",
-  "SAP",
-  "UiPath",
-  "Smartsheet",
+  "Azure DevOps",
+  "webMethods",
+  "SAP Procura",
+  "Civica",
+  "Tyro Health",
 ]
 
 export default function SkillsPage() {
@@ -68,8 +130,8 @@ export default function SkillsPage() {
     <>
       <PageHeader
         eyebrow="Capabilities"
-        title="Skills that turn strategy into delivery"
-        description="A blended toolkit across analysis, transformation, readiness and data — grounded in strong stakeholder leadership."
+        title="Capabilities that turn strategy into operational outcomes"
+        description="The combination of business analysis, operational readiness, deployment leadership and customer-focused transformation that I bring to complex initiatives."
       />
 
       <section className="mx-auto max-w-6xl px-5 pb-8 pt-8 lg:px-8">
@@ -98,27 +160,21 @@ export default function SkillsPage() {
       <section className="mx-auto max-w-6xl px-5 py-12 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="rounded-2xl border border-border bg-card p-8">
-            <h2 className="font-serif text-2xl font-semibold tracking-tight">Proficiency</h2>
-            <div className="mt-6 space-y-5">
-              {proficiency.map((p) => (
-                <div key={p.label}>
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="font-medium">{p.label}</span>
-                    <span className="text-muted-foreground">{p.value}%</span>
-                  </div>
-                  <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-secondary">
-                    <div className="h-full rounded-full bg-primary" style={{ width: `${p.value}%` }} />
-                  </div>
-                </div>
+            <h2 className="font-serif text-2xl font-semibold tracking-tight">Specialist Experience</h2>
+            <div className="mt-6 flex flex-wrap gap-2.5">
+              {specialistExperience.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-lg border border-border bg-background px-3 py-1.5 text-sm font-medium text-foreground/80"
+                >
+                  {item}
+                </span>
               ))}
             </div>
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-8">
             <h2 className="font-serif text-2xl font-semibold tracking-tight">Tools &amp; platforms</h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Placeholder copy. A representative set of the tools I use to deliver analysis and transformation.
-            </p>
             <div className="mt-6 flex flex-wrap gap-2.5">
               {tools.map((tool) => (
                 <span
