@@ -13,13 +13,14 @@ export const person = {
   name: "Ashlea Davies",
 
   roles: [
-    "Business Analyst",
-    "Operational Readiness Consultant",
-    "Deployment & Adoption Lead",
+    "Transformation Consultant",
+    "Business Analysis",
+    "Operational Readiness",
+    "Deployment & Adoption"
   ],
 
   tagline:
-    "I bridge the gap between strategy, customer needs and frontline operations through business analysis, operational readiness, stakeholder engagement and deployment. My focus is ensuring change is practical, measurable and embraced by the people delivering services, while improving outcomes for the customers they support.",
+    "I bridge strategy, customer outcomes and frontline operations through business analysis, operational readiness and deployment. I help organisations deliver change that is practical, measurable and embraced by the people responsible for making it succeed.",
 
   location: "Lockhart, NSW, Australia",
 
@@ -57,7 +58,7 @@ export const stats = [
     label: "Neighbourhood deployments delivered across Australia",
   },
   {
-    value: "Transformation Specialist",
-    label: "Healthcare & Community Services",
+    value: "5",
+    label: "Progressive roles across operations, deployment and business analysis",
   },
 ]

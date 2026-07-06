@@ -8,29 +8,29 @@ import { person } from "@/lib/site"
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About Ashlea Davies — business analysis, operational readiness, workforce optimisation and digital transformation expertise.",
+    "About Ashlea Davies — transformation delivery, operational readiness, stakeholder engagement and customer-focused change.",
 }
 
 const values = [
   {
     icon: Compass,
-    title: "Clarity from complexity",
-    body: "I turn unclear problems, competing priorities and messy operational detail into clear plans teams can actually use.",
+    title: "Customer-focused change",
+    body: "Every transformation decision should improve outcomes for customers while remaining practical for the people delivering the service.",
   },
   {
     icon: HeartHandshake,
-    title: "Change that respects people",
-    body: "I bring frontline experience into transformation work, so change is designed with the people delivering services, not just for them.",
+    title: "Operational readiness",
+    body: "Preparing organisations, teams and technology for successful adoption through planning, risk management and operational readiness.",
   },
   {
     icon: ShieldCheck,
-    title: "Readiness before go-live",
-    body: "I focus on operational readiness, risk, data, workforce capability and service continuity before change reaches customers and teams.",
+    title: "Frontline-informed delivery",
+    body: "Years of operational experience help me design solutions that work in practice because they're grounded in how services are actually delivered.",
   },
   {
     icon: Sparkles,
-    title: "Practical outcomes",
-    body: "I care about measurable, sustainable improvement: better processes, stronger adoption, cleaner data and confident operations.",
+    title: "Practical transformation outcomes",
+    body: "Turning strategy into measurable operational improvements through practical implementation, sustainable adoption and continuous service improvement.",
   },
 ]
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About"
-        title="I help organisations turn complex transformation into practical, operationally ready change"
+        title="Helping organisations turn strategy into operational reality."
       />
 
       <section className="mx-auto max-w-6xl px-5 pb-16 pt-8 lg:px-8">
@@ -65,29 +65,19 @@ export default function AboutPage() {
 
           <div className="space-y-6 text-pretty text-lg leading-relaxed text-foreground/80">
             <p>
-              My career has grown from frontline service coordination through to operational leadership,
-              deployment, adoption and business analysis. That mix gives me a practical view of change:
-              I understand the strategy being designed, but also the pressure on the people expected to
-              make it work.
+              My career has progressed from frontline service delivery through operational leadership, deployment consulting and business analysis. That experience allows me to bridge strategy, customer outcomes and frontline operations, ensuring transformation is practical, measurable and successfully adopted by the people delivering services every day.
             </p>
 
             <p>
-              Across Australian Unity Home Health, I supported large-scale transformation across
-              workforce optimisation, Team-Based Care, Salesforce Health Cloud readiness, Procura and
-              AlayaCare environments, customer service alignment, capability uplift and deployment
-              planning.
+              I help organisations move from ambition to delivery by bringing together operational readiness, stakeholder engagement, business analysis and deployment planning. My focus is making change achievable for both the organisation and the people responsible for delivering it.
             </p>
 
             <p>
-              I work best where change is complex, cross-functional and operationally sensitive. I help
-              leaders understand what needs to be true before go-live, where risk is sitting, what data
-              needs attention, and how teams can be prepared without overwhelming the business.
+              Much of my experience has been gained within complex healthcare and community service environments, where successful change directly impacts customers, employees and communities. Working in these settings has shaped my approach to transformation, placing equal importance on operational excellence, customer outcomes and the people delivering services every day.
             </p>
 
             <p>
-              My approach is structured, calm and practical. I bring clarity to messy problems, connect
-              technology decisions back to real service delivery, and help organisations create change
-              that is not only delivered, but adopted.
+              Business analysis is one capability within my broader transformation experience. I bring a structured, consultative approach to understanding problems, shaping solutions and translating strategy into lasting operational outcomes.
             </p>
 
             <div className="grid gap-4 pt-4 sm:grid-cols-2">
@@ -107,7 +97,7 @@ export default function AboutPage() {
                 href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
               >
-                Work with me
+                Let’s connect
                 <ArrowRight className="size-4" />
               </Link>
             </div>
