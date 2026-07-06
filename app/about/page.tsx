@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const values = [
   {
     icon: Compass,
-    title: "Customer-focused change",
+    title: "Customer outcomes",
     body: "Every transformation decision should improve outcomes for customers while remaining practical for the people delivering the service.",
   },
   {
@@ -29,7 +29,7 @@ const values = [
   },
   {
     icon: Sparkles,
-    title: "Practical transformation outcomes",
+    title: "Sustainable transformation",
     body: "Turning strategy into measurable operational improvements through practical implementation, sustainable adoption and continuous service improvement.",
   },
 ]
@@ -58,28 +58,40 @@ export default function AboutPage() {
 
             <div className="mt-6 rounded-2xl border border-border bg-card p-6">
               <p className="text-sm font-semibold">{person.name}</p>
-              <p className="mt-1 text-sm text-muted-foreground">{person.roles.join(" · ")}</p>
+              <p className="mt-1 text-sm font-medium text-muted-foreground">
+  Transformation Consultant
+</p>
+
+<p className="mt-2 text-sm text-muted-foreground">
+  Business Analysis • Operational Readiness • Deployment
+</p>
               <p className="mt-3 text-sm text-muted-foreground">{person.location}</p>
             </div>
           </div>
 
           <div className="space-y-6 text-pretty text-lg leading-relaxed text-foreground/80">
             <p>
-              My career has progressed from frontline service delivery through operational leadership, deployment consulting and business analysis. That experience allows me to bridge strategy, customer outcomes and frontline operations, ensuring transformation is practical, measurable and successfully adopted by the people delivering services every day.
-            </p>
+  My career has progressed from frontline service delivery through operational leadership, deployment consulting and business analysis. That journey gives me a practical perspective on transformation, allowing me to bridge strategy, customer outcomes and frontline operations so change is practical, measurable and successfully adopted by the people delivering services every day.
+</p>
 
             <p>
-              I help organisations move from ambition to delivery by bringing together operational readiness, stakeholder engagement, business analysis and deployment planning. My focus is making change achievable for both the organisation and the people responsible for delivering it.
-            </p>
+  I help organisations move from strategy to successful delivery by bringing together business analysis, operational readiness, stakeholder engagement and deployment planning. My role is creating the conditions that allow technology, people and operational change to succeed together.
+</p>
 
             <p>
-              Much of my experience has been gained within complex healthcare and community service environments, where successful change directly impacts customers, employees and communities. Working in these settings has shaped my approach to transformation, placing equal importance on operational excellence, customer outcomes and the people delivering services every day.
-            </p>
+  Much of my experience has been gained within complex healthcare and community service environments, where successful change directly impacts customers, employees and vulnerable communities. Working in these settings has shaped my approach to transformation, placing equal importance on operational excellence, customer outcomes and sustainable adoption.
+</p>
 
             <p>
-              Business analysis is one capability within my broader transformation experience. I bring a structured, consultative approach to understanding problems, shaping solutions and translating strategy into lasting operational outcomes.
-            </p>
+  Business analysis is one capability within my broader transformation experience. I use it to understand problems, align stakeholders, shape practical solutions and translate strategy into operational outcomes that last beyond go-live.
+</p>
+<h2 className="font-serif text-2xl font-semibold">
+  What I bring to transformation
+</h2>
 
+<p className="text-muted-foreground">
+  The principles that shape how I deliver complex change.
+</p>
             <div className="grid gap-4 pt-4 sm:grid-cols-2">
               {values.map((v) => (
                 <div key={v.title} className="rounded-2xl border border-border bg-card p-6">
