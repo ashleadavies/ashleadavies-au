@@ -123,8 +123,8 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "ivr-enhancement",
-    title: "IVR Enhancement",
+    slug: "genesysivr-enhancement",
+    title: "Genesys IVR Enhancement",
     category: "Transformation Initiative",
     summary:
       "Supported the redesign of a cloud-based IVR experience, improving customer journeys, frontline context and readiness for future digital service enhancements.",
@@ -271,11 +271,11 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "business-analysis-community-of-practice",
-    title: "Business Analysis Community of Practice",
+    slug: "business-analyst-community-of-practice",
+    title: "Business Analyst Community of Practice",
     category: "Business Improvement Initiative",
     summary:
-      "Established a Business Analysis Community of Practice to improve collaboration, standardise ways of working and create a central knowledge hub for reusable BA resources.",
+      "Established a Business Analyst Community of Practice to improve collaboration, standardise ways of working and create a central knowledge hub for reusable BA resources.",
     year: "2026",
     client: "Enterprise Technology Function",
     duration: "6 months",
@@ -290,7 +290,7 @@ export const projects: Project[] = [
     challenge:
       "Without a central community, knowledge remained within individual projects, templates were duplicated, documentation standards varied and new Business Analysts had fewer structured onboarding resources.",
     role:
-      "As Business Analyst, I designed, established and facilitated the Business Analysis Community of Practice.",
+      "As Business Analyst, I designed, established and facilitated the Business Analyst Community of Practice.",
     approach:
       "I focused on creating a practical and collaborative environment rather than another meeting series. The community was built around knowledge sharing, capability development, standardisation and continuous improvement.",
     activities: [
@@ -299,7 +299,7 @@ export const projects: Project[] = [
       "Facilitated monthly Community of Practice sessions",
       "Developed reusable templates, guides and BA resources",
       "Coordinated guest speakers and knowledge sharing sessions",
-      "Created a central repository for business analysis knowledge",
+      "Created a central repository for business analyst knowledge",
       "Encouraged cross-squad collaboration and lessons learnt sharing",
     ],
     outcomes: [
