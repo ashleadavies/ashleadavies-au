@@ -123,6 +123,51 @@ export const projects: Project[] = [
   },
 
   {
+    slug: "enterprise-uat-release-readiness",
+    title: "Enterprise UAT & Release Readiness",
+    category: "UAT Delivery Project",
+    summary:
+      "Delivered a structured UAT and release readiness package for a complex service enhancement programme, enabling clear validation, evidence capture and stakeholder sign-off.",
+    year: "2026",
+    client: "Public service programme",
+    duration: "6 weeks",
+    tags: ["UAT", "Release Readiness", "Stakeholder Alignment"],
+    kpis: [
+      { value: "100%", label: "Scenario coverage" },
+      { value: "1", label: "Validation package" },
+      { value: "0", label: "Critical gaps" },
+    ],
+    overview:
+      "A complex service enhancement programme required a structured approach to validate customer journeys, operational readiness and release confidence in a regulated environment.",
+    challenge:
+      "The programme needed a clear and secure validation package that could be used across business, delivery and support teams without delaying sign-off or compromising sensitive content.",
+    role:
+      "As Business Analyst, I prepared the validation pack, coordinated scenario reviews and supported readiness for testing and release.",
+    approach:
+      "I structured the package around user journeys, test scenarios, evidence requirements and governance so that validation could be completed consistently and efficiently.",
+    activities: [
+      "Defined scope, scenarios and acceptance criteria",
+      "Prepared a validation pack for stakeholders",
+      "Coordinated testing activities and evidence capture",
+      "Supported issue triage and resolution",
+      "Facilitated business sign-off and readiness discussions",
+    ],
+    outcomes: [
+      { value: "Improved", label: "Readiness and confidence" },
+      { value: "Reduced", label: "Validation ambiguity" },
+      { value: "Strengthened", label: "Release sign-off process" },
+    ],
+    technology: [
+      "Contact centre platform",
+      "CRM platform",
+      "Workflow tools",
+      "Collaboration suite",
+    ],
+    lessons:
+      "A well-designed readiness pack improves confidence and decision-making, especially in regulated environments where clarity, control and consistency matter as much as delivery speed.",
+  },
+
+  {
     slug: "genesysivr-enhancement",
     title: "Genesys IVR Enhancement",
     category: "Transformation Initiative",
