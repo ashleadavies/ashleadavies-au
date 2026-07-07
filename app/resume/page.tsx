@@ -125,13 +125,14 @@ export default function ResumePage() {
 
       <section className="mx-auto max-w-4xl px-5 pb-8 pt-4 lg:px-8">
         <div className="flex flex-wrap items-center gap-3">
-          <Link
-            href="/resume"
+          <a
+            href="/resume/Ashlea_Davies_Resume.pdf"
+            download="Ashlea_Davies_Resume.pdf"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
             <Download className="size-4" />
             Download Resume
-          </Link>
+          </a>
 
           <Link
             href="/contact"

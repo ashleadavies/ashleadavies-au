@@ -9,6 +9,8 @@ export const nav = [
   { label: "Contact", href: "/contact" },
 ]
 
+export const siteUrl = "https://ashleadavies.au"
+
 export const person = {
   name: "Ashlea Davies",
 

@@ -19,20 +19,49 @@ const fraunces = Fraunces({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ashleadavies.au"),
   title: {
     default: "Ashlea Davies — Business Analyst & Digital Transformation Consultant",
     template: "%s — Ashlea Davies",
   },
   description:
     "Ashlea Davies is a Business Analyst, Digital Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
+  applicationName: "Ashlea Davies",
+  authors: [{ name: "Ashlea Davies" }],
   generator: "v0.app",
   icons: {
     icon: [
-      { url: "/icon-light-32x32.png", media: "(prefers-color-scheme: light)" },
-      { url: "/icon-dark-32x32.png", media: "(prefers-color-scheme: dark)" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      "/logos/favicon.ico",
+      { url: "/logos/icon-light-32x32.png", media: "(prefers-color-scheme: light)" },
+      { url: "/logos/icon-dark-32x32.png", media: "(prefers-color-scheme: dark)" },
+      { url: "/logos/icon.svg", type: "image/svg+xml" },
     ],
-    apple: "/apple-icon.png",
+    apple: "/logos/apple-icon.png",
+    shortcut: "/logos/favicon.ico",
+  },
+  openGraph: {
+    title: "Ashlea Davies — Business Analyst & Digital Transformation Consultant",
+    description:
+      "Ashlea Davies is a Business Analyst, Digital Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
+    url: "https://ashleadavies.au",
+    siteName: "Ashlea Davies",
+    type: "website",
+    locale: "en_AU",
+    images: [
+      {
+        url: "/images/portrait.png",
+        width: 1200,
+        height: 630,
+        alt: "Portrait of Ashlea Davies",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ashlea Davies — Business Analyst & Digital Transformation Consultant",
+    description:
+      "Ashlea Davies is a Business Analyst, Digital Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
+    images: ["/images/portrait.png"],
   },
 }
 

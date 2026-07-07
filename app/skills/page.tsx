@@ -113,7 +113,7 @@ const tools = [
   "Genesys Cloud",
   "Miro",
   "Visio",
-  "Tableau Dashboard Development",,
+  "Tableau Dashboard Development",
   "SharePoint",
   "Microsoft Teams",
   "ServiceNow",

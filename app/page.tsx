@@ -1,8 +1,19 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, ArrowUpRight, CheckCircle2 } from "lucide-react"
 import { ProjectCard } from "@/components/project-card"
 import { person, stats } from "@/lib/site"
+export const metadata: Metadata = {
+  title: "Ashlea Davies — Business Transformation Consultant",
+  description:
+    "Business Transformation Consultant with experience across business analysis, operational readiness, deployment leadership and customer-focused transformation across healthcare and community services.",
+  openGraph: {
+    title: "Ashlea Davies — Business Transformation Consultant",
+    description:
+      "Business Transformation Consultant with experience across business analysis, operational readiness, deployment leadership and customer-focused transformation across healthcare and community services.",
+  },
+}
 import { projects } from "@/lib/projects"
 
 export default function HomePage() {
