@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     locale: "en_AU",
     images: [
       {
-        url: "/images/portrait.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Portrait of Ashlea Davies",
+        alt: "Ashlea Davies Portfolio",
       },
     ],
   },
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Ashlea Davies — Business Analyst & Digital Transformation Consultant",
     description:
       "Ashlea Davies is a Business Analyst, Digital Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
-    images: ["/images/portrait.png"],
+    images: ["/og-image.jpg"],
   },
 }
 

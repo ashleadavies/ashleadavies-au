@@ -123,56 +123,6 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "genesys-cloud-integration",
-    title: "Genesys Cloud Integration",
-    category: "Technology Implementation Project",
-    summary:
-      "Supported the implementation of Genesys Cloud integration capability, improving contact centre readiness, system connectivity and future digital service foundations.",
-    year: "2026",
-    client: "National Healthcare Service Provider",
-    duration: "Delivery initiative",
-    tags: ["Genesys Cloud", "Salesforce", "Technology Implementation"],
-    kpis: [
-      { value: "Integrated", label: "Contact centre platform" },
-      { value: "Improved", label: "Frontline system visibility" },
-      { value: "Future-ready", label: "Digital service foundation" },
-    ],
-    overview:
-      "A healthcare service provider required stronger integration between its cloud contact centre platform and customer management environment. The work supported improved visibility, operational readiness and a scalable foundation for future digital service enhancements.",
-    challenge:
-      "The organisation needed to ensure contact centre interactions could support frontline workflows, improve customer context and align with existing Salesforce processes. The implementation required coordination between business stakeholders, technology teams and vendor specialists.",
-    role:
-      "As Business Analyst, I supported requirements clarification, stakeholder coordination, integration readiness and validation activities across business and technical teams.",
-    approach:
-      "I worked across operational and technology stakeholders to clarify business needs, validate integration behaviour, identify risks and support readiness for implementation.",
-    activities: [
-      "Clarified business requirements and operational expectations",
-      "Supported integration discussions between Genesys, Salesforce and internal technology teams",
-      "Validated key user journeys and contact centre workflows",
-      "Supported testing and readiness activities",
-      "Documented issues, decisions and follow-up actions",
-      "Engaged stakeholders to ensure operational needs were reflected in the solution",
-    ],
-    outcomes: [
-      { value: "Improved", label: "System alignment and operational visibility" },
-      { value: "Stronger", label: "Readiness for future contact centre uplift" },
-      { value: "Clearer", label: "Business and technical requirements" },
-    ],
-    technology: [
-      "Genesys Cloud",
-      "Salesforce",
-      "Salesforce CTI",
-      "Jira",
-      "Confluence",
-      "Microsoft Teams",
-      "Miro",
-      "Visio",
-    ],
-    lessons:
-      "Technology implementation succeeds when business needs, technical design and frontline workflows are aligned early. Clear requirements and strong stakeholder engagement reduce delivery risk and improve adoption.",
-  },
-
-  {
     slug: "ivr-enhancement",
     title: "IVR Enhancement",
     category: "Transformation Initiative",
@@ -274,7 +224,7 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "civica-eligibility-restoration",
+    slug: "vendor-eligibility-restoration",
     title: "Vendor Eligibility Restoration",
     category: "Operational Improvement Initiative",
     summary:

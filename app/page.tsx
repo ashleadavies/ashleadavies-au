@@ -12,6 +12,21 @@ export const metadata: Metadata = {
     title: "Ashlea Davies — Business Transformation Consultant",
     description:
       "Business Transformation Consultant with experience across business analysis, operational readiness, deployment leadership and customer-focused transformation across healthcare and community services.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ashlea Davies Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ashlea Davies — Business Transformation Consultant",
+    description:
+      "Business Transformation Consultant with experience across business analysis, operational readiness, deployment leadership and customer-focused transformation across healthcare and community services.",
+    images: ["/og-image.jpg"],
   },
 }
 import { projects } from "@/lib/projects"
