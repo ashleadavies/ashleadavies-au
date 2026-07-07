@@ -63,7 +63,9 @@ export function SiteFooter() {
           <p>
             &copy; {new Date().getFullYear()} {person.name}. All rights reserved.
           </p>
-          <p>Business Analysis &middot; Digital Transformation &middot; Operational Readiness</p>
+          <p>
+  Business Analysis &middot; Business Transformation &middot; Operational Readiness
+</p>
         </div>
       </div>
     </footer>

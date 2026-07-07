@@ -21,11 +21,11 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ashleadavies.au"),
   title: {
-    default: "Ashlea Davies — Business Analyst & Digital Transformation Consultant",
+    default: "Ashlea Davies — Business Analyst & Business Transformation Consultant",
     template: "%s — Ashlea Davies",
   },
   description:
-    "Ashlea Davies is a Business Analyst, Digital Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
+    "Ashlea Davies is a Business Analyst, Business Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
   applicationName: "Ashlea Davies",
   authors: [{ name: "Ashlea Davies" }],
   generator: "v0.app",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     shortcut: "/logos/favicon.ico",
   },
   openGraph: {
-    title: "Ashlea Davies — Business Analyst & Digital Transformation Consultant",
+    title: "Ashlea Davies — Business Analyst & Business Transformation Consultant",
     description:
-      "Ashlea Davies is a Business Analyst, Digital Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
+      "Ashlea Davies is a Business Analyst, Business Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
     url: "https://ashleadavies.au",
     siteName: "Ashlea Davies",
     type: "website",
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ashlea Davies — Business Analyst & Digital Transformation Consultant",
+    title: "Ashlea Davies — Business Analyst & Business Transformation Consultant",
     description:
-      "Ashlea Davies is a Business Analyst, Digital Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
+      "Ashlea Davies is a Business Analyst, Business Transformation Consultant and Operational Readiness Specialist helping enterprises lead change with confidence.",
     images: ["/og-image.jpg"],
   },
 }

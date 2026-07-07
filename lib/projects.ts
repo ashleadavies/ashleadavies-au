@@ -37,7 +37,7 @@ export const projects: Project[] = [
     overview:
       "A national home health provider introduced a Team-Based Care operating model to improve workforce planning, service delivery and customer outcomes. The transformation required operational readiness, workforce capability alignment, stakeholder engagement and deployment planning across multiple neighbourhoods.",
     challenge:
-      "The organisation needed to improve workforce utilisation, preserve continuity of care, manage increasing service complexity and prepare frontline operations for future digital transformation. Each neighbourhood had different workforce capacity, service demand, data quality and readiness risks that needed to be understood before deployment.",
+      "The organisation needed to improve workforce utilisation, preserve continuity of care, manage increasing service complexity and prepare frontline operations for future business transformation. Each neighbourhood had different workforce capacity, service demand, data quality and readiness risks that needed to be understood before deployment.",
     role:
       "Initially as Deployment Consultant, then as Deployment & Adoption Lead, I translated the future operating model into practical operational delivery. I worked with operational leaders, frontline teams and technology stakeholders to prepare neighbourhoods for successful adoption.",
     approach:
