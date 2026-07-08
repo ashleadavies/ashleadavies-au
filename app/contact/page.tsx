@@ -31,9 +31,8 @@ export default function ContactPage() {
           <div>
             <h2 className="font-serif text-xl font-semibold tracking-tight">Contact details</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Placeholder copy. Reach out via any channel below, or use the form and I&apos;ll respond within one
-              business day.
-            </p>
+  I'm always happy to connect with hiring managers, recruiters and organisations looking for someone who can turn strategy into practical outcomes. Whether you'd like to discuss an opportunity, a transformation initiative or simply connect, I'd love to hear from you.
+</p>
 
             <ul className="mt-8 space-y-4">
               {details.map((d) => (

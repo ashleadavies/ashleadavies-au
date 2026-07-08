@@ -39,13 +39,13 @@ export function ContactForm() {
           <label htmlFor="name" className="text-sm font-medium">
             Name
           </label>
-          <input id="name" name="name" required placeholder="Jane Doe" className={inputClass} />
+          <input id="name" name="name" required placeholder="Your name" className={inputClass} />
         </div>
         <div className="flex flex-col gap-1.5">
           <label htmlFor="email" className="text-sm font-medium">
             Email
           </label>
-          <input id="email" name="email" type="email" required placeholder="jane@company.com" className={inputClass} />
+          <input id="email" name="email" type="email" required placeholder="Your email" className={inputClass} />
         </div>
       </div>
 
@@ -53,7 +53,7 @@ export function ContactForm() {
         <label htmlFor="company" className="text-sm font-medium">
           Company
         </label>
-        <input id="company" name="company" placeholder="Company name" className={inputClass} />
+        <input id="company" name="company" placeholder="Organisation (optional)" className={inputClass} />
       </div>
 
       <div className="mt-5 flex flex-col gap-1.5">
@@ -65,7 +65,7 @@ export function ContactForm() {
           name="message"
           required
           rows={5}
-          placeholder="Tell me about your programme or challenge…"
+          placeholder="Tell me about your opportunity, project or how I can help..."
           className={`${inputClass} resize-none`}
         />
       </div>
