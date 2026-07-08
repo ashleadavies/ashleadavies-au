@@ -19,9 +19,9 @@ export function ContactForm() {
           <CheckCircle2 className="size-6" />
         </span>
         <h3 className="mt-4 font-serif text-xl font-semibold">Thank you</h3>
-        <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-          Placeholder confirmation. Your message has been received — I&apos;ll be in touch shortly.
-        </p>
+        <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted-foreground">
+  Thanks for reaching out. I've received your message and will be in touch as soon as possible.
+</p>
         <Button className="mt-6" variant="outline" onClick={() => setSubmitted(false)}>
           Send another message
         </Button>
