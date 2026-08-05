@@ -6,10 +6,45 @@ import { Button } from "@/components/ui/button"
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
+  const [isSending, setIsSending] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSubmitted(true)
+    setError(null)
+    setIsSending(true)
+
+    try {
+      const form = e.currentTarget
+      const formData = new FormData(form)
+      const payload = {
+        name: String(formData.get("name") ?? ""),
+        email: String(formData.get("email") ?? ""),
+        company: String(formData.get("company") ?? ""),
+        message: String(formData.get("message") ?? ""),
+      }
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      })
+
+      const result = (await response.json()) as { success?: boolean; error?: string }
+
+      if (!response.ok || !result.success) {
+        setError(result.error || "Unable to send your message right now. Please try again later.")
+        return
+      }
+
+      setSubmitted(true)
+    } catch {
+      setError("Unable to send your message right now. Please try again later.")
+    } finally {
+      setIsSending(false)
+    }
   }
 
   if (submitted) {
@@ -20,8 +55,8 @@ export function ContactForm() {
         </span>
         <h3 className="mt-4 font-serif text-xl font-semibold">Thank you</h3>
         <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted-foreground">
-  Thanks for reaching out. I've received your message and will be in touch as soon as possible.
-</p>
+          Thanks for reaching out. I've received your message and will be in touch as soon as possible.
+        </p>
         <Button className="mt-6" variant="outline" onClick={() => setSubmitted(false)}>
           Send another message
         </Button>
@@ -70,8 +105,14 @@ export function ContactForm() {
         />
       </div>
 
-      <Button type="submit" size="lg" className="mt-6 w-full sm:w-auto">
-        Send message
+      {error ? (
+        <p className="mt-4 rounded-lg border border-destructive/30 bg-destructive/5 px-3 py-2 text-sm text-destructive">
+          {error}
+        </p>
+      ) : null}
+
+      <Button type="submit" size="lg" className="mt-6 w-full sm:w-auto" disabled={isSending}>
+        {isSending ? "Sending..." : "Send message"}
         <Send className="size-4" />
       </Button>
     </form>
