@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata, Viewport } from "next"
 import { Inter, Fraunces } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -79,17 +80,28 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${fraunces.variable} bg-background`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${fraunces.variable} bg-background`}
+    >
       <body className="font-sans antialiased">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
           <div className="flex min-h-dvh flex-col">
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter />
           </div>
-        </ThemeProvider>
-        {process.env.NODE_ENV === "production" && <Analytics />}
-      </body>
-    </html>
-  )
+             </ThemeProvider>
+
+      <Analytics />
+      <SpeedInsights />
+    </body>
+  </html>
+)
 }
