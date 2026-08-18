@@ -71,56 +71,83 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "procura-to-salesforce-migration",
-    title: "Procura to Salesforce Migration",
-    category: "Platform Migration Project",
-    summary:
-      "Prepared customer, workforce and operational data for a phased migration from Procura to Salesforce Health Cloud, supporting business readiness for cutover and future national rollout.",
-    year: "2025–2026",
-    client: "National Home Health Provider",
-    duration: "Phased rollout",
-    tags: ["Data Readiness", "Salesforce", "Platform Migration"],
-    kpis: [
-      { value: "45,000+", label: "Customer records prepared" },
-      { value: "First", label: "53 Neighbourhood go-live supported" },
-      { value: "National", label: "Rollout framework established" },
-    ],
-    overview:
-      "A national home health provider commenced a phased Salesforce Health Cloud transformation to modernise customer management and care coordination. The first neighbourhood successfully transitioned to Salesforce, with future neighbourhoods progressing through staged deployment.",
-    challenge:
-      "Migrating from Procura to Salesforce required more than technical data movement. Customer records, service information, employee capability and operational processes needed to be reviewed and corrected before cutover to reduce customer, workforce and service delivery risk.",
-    role:
-      "As Deployment Consultant, I supported operational readiness, data validation and cutover preparation to ensure neighbourhoods were ready to transition to Salesforce Health Cloud.",
-    approach:
-      "I used a business-led data readiness approach, validating customer records, care plans, service classifications, employee competencies, workforce capability and operational processes before migration.",
-    activities: [
-      "Analysed customer and workforce data prior to migration",
-      "Identified inconsistencies between customer records and service delivery",
-      "Validated employee competencies against required services",
-      "Partnered with neighbourhood leaders to resolve data quality issues",
-      "Conducted operational readiness assessments",
-      "Supported Salesforce cutover planning and business validation",
-      "Assisted go-live preparation and hypercare planning",
-    ],
-    outcomes: [
-      { value: "Improved", label: "Customer and workforce data quality" },
-      { value: "Reduced", label: "Deployment and cutover risk" },
-      { value: "Repeatable", label: "Framework for future neighbourhood migrations" },
-    ],
-    technology: [
-      "Salesforce Health Cloud",
-      "Procura",
-      "Jira",
-      "Confluence",
-      "Miro",
-      "Visio",
-      "Microsoft Excel",
-      "Microsoft Teams",
-      "SharePoint",
-    ],
-    lessons:
-      "Enterprise CRM migrations are rarely limited by technology. Their success depends on the quality of the business processes, data and operational readiness that sit underneath them.",
-  },
+  slug: "home-health-salesforce-transformation",
+
+  title: "Enterprise Home Health CRM Transformation",
+
+  category: "Healthcare Transformation & Deployment",
+
+  summary:
+    "Supported operational and data readiness for a national Salesforce Health Cloud transformation spanning Home Health, Community Nursing and Allied Healthcare, connecting customer, workforce and service delivery data across a complex healthcare ecosystem.",
+
+  year: "2025–2026",
+
+  client: "National Home & Community Healthcare Provider",
+
+  duration: "Phased national rollout",
+
+  tags: [
+    "Healthcare Transformation",
+    "Operational Readiness",
+    "Salesforce Health Cloud",
+    "Data Readiness",
+    "Deployment & Adoption"
+  ],
+
+  kpis: [
+    { value: "45,000+", label: "Customer records prepared" },
+    { value: "4,000+", label: "Employees across service delivery" },
+    { value: "53+", label: "Neighbourhood deployments supported" },
+  ],
+
+  overview:
+    "A national home and community healthcare provider commenced a phased transformation to Salesforce Health Cloud to modernise customer management, care coordination and service delivery. The program spanned Home Health, Community Nursing and Allied Healthcare operations, supporting an ecosystem of more than 4,000 employees alongside external healthcare partners and providers. The transformation required alignment across customer, workforce and operational systems before neighbourhoods could safely transition through staged deployment.",
+
+  challenge:
+    "The transformation involved considerably more than migrating customer data from legacy systemsto Salesforce Health Cloud. Customer records, care and service requirements, workforce capability, employee information and operational processes were distributed across multiple enterprise platforms. These dependencies needed to be validated and aligned before deployment to reduce customer, workforce and service delivery risk.",
+
+  role:
+    "As Deployment Consultant, I worked across frontline operations, neighbourhood leadership, transformation stakeholders and technology teams to drive business readiness for deployment. My responsibilities included customer and workforce data validation, service and workforce alignment, operational readiness, issue resolution, cutover preparation and go-live support.",
+
+  approach:
+    "I used a service-delivery-led readiness approach, connecting customer and service requirements with workforce capability and operational processes. This included analysing customer and workforce data, validating care and service information, assessing employee competencies and workforce capability, identifying operational dependencies and working with stakeholders to resolve issues before deployment.",
+
+  activities: [
+    "Analysed and validated customer, workforce and service delivery data prior to deployment",
+    "Identified inconsistencies between customer records, service requirements and operational delivery",
+    "Validated employee competencies and workforce capability against required customer services",
+    "Worked with neighbourhood leaders and operational stakeholders to resolve data and readiness issues",
+    "Supported readiness across internal workforce and external service delivery dependencies",
+    "Conducted operational readiness assessments ahead of deployment",
+    "Supported Salesforce Health Cloud cutover planning and business validation",
+    "Coordinated issue identification, escalation and resolution across business and technology teams",
+    "Supported neighbourhood go-live preparation and hypercare",
+    "Contributed to repeatable readiness processes for subsequent neighbourhood deployments",
+  ],
+
+  outcomes: [
+    { value: "Improved", label: "Customer, workforce and service data quality" },
+    { value: "Reduced", label: "Operational and deployment risk" },
+    { value: "Repeatable", label: "Readiness framework for national rollout" },
+  ],
+
+  technology: [
+    "Salesforce Health Cloud",
+    "Procura powered by AlayaCare",
+    "AlayaCare",
+    "SAP SuccessFactors Employee Central",
+    "Jira",
+    "Confluence",
+    "Miro",
+    "Visio",
+    "Microsoft Excel",
+    "Microsoft Teams",
+    "SharePoint",
+  ],
+
+  lessons:
+    "Large-scale healthcare transformation is not simply a technology change. Successful deployment depends on aligning customer and service requirements with workforce capability, operational processes and reliable data so that service delivery can continue safely through change.",
+},
 
   {
     slug: "enterprise-uat-release-readiness",
