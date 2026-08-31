@@ -14,6 +14,16 @@ export type Project = {
   approach: string
   activities: string[]
   outcomes: { value: string; label: string }[]
+
+  publishedOutcomes?: {
+    value: string
+    label: string
+  }[]
+
+  publishedOutcomesContext?: string
+  publishedOutcomesSource?: string
+  publishedOutcomesSourceUrl?: string
+
   technology: string[]
   lessons: string
 }
@@ -27,7 +37,7 @@ export const projects: Project[] = [
     category: "Operating Model Transformation",
 
     summary:
-      "Led deployment and adoption of a Team-Based Care operating model across 26 neighbourhoods supporting 33,000+ customers, aligning workforce planning, operational readiness, service delivery and frontline adoption.",
+      "Led deployment and adoption of a Team-Based Care operating model across 26 neighbourhoods supporting 33,000+ customers, aligning workforce optimisation, operational readiness, service delivery and frontline adoption.",
 
     year: "2024–2025",
 
@@ -44,8 +54,14 @@ export const projects: Project[] = [
     ],
 
     kpis: [
-      { value: "26", label: "Neighbourhoods deployed" },
-      { value: "33,000+", label: "Customers supported" },
+      {
+        value: "26",
+        label: "Neighbourhoods deployed",
+      },
+      {
+        value: "33,000+",
+        label: "Customers supported",
+      },
       {
         value: "~12,000",
         label: "Scheduling files produced per fortnight",
@@ -53,27 +69,34 @@ export const projects: Project[] = [
     ],
 
     overview:
-      "A national home and community healthcare provider introduced a Team-Based Care operating model to improve workforce planning, utilisation, service delivery and customer outcomes. The transformation was deployed across 26 neighbourhoods supporting more than 33,000 customers and required significant workforce, operational and change readiness before implementation.",
+      "Facing growing demand for home and community care, workforce constraints and increasingly complex rostering requirements, a national healthcare provider introduced a Team-Based Care operating model supported by Biarri workforce optimisation technology. The model moved operations beyond traditional Procura-based and manual rostering processes toward a more data-driven approach to workforce planning, service allocation and scheduling. The transformation was deployed across 26 neighbourhoods supporting more than 33,000 customers and required significant workforce, operational, data and change readiness before implementation.",
 
     challenge:
-      "Each neighbourhood operated with different workforce capacity, customer demand, service requirements, capability gaps and operational risks. The programme needed to improve workforce utilisation and service alignment while maintaining continuity of care and preparing frontline operations for broader technology and business transformation.",
+      "Each neighbourhood had different workforce capacity, customer demand, service requirements, data quality and operational readiness risks that needed to be understood before deployment. Workforce planning also needed to account for different enterprise agreements and awards, employee availability, contracted hours, rostering constraints, travel requirements and customer service time windows while maintaining continuity of care and familiar care relationships. The operating model, workforce rules and supporting data also needed to be designed with the organisation's longer-term technology transformation in mind so the model could transition into Salesforce Health Cloud rather than becoming a short-term solution.",
 
     role:
-      "Initially as Deployment Consultant and subsequently as Deployment & Adoption Lead, I led and supported deployment of the operating model across neighbourhood operations. I translated the future-state model into practical implementation activities spanning operational readiness, workforce planning, training, stakeholder engagement, adoption and post-deployment support.",
+      "Initially as Deployment Consultant and subsequently as Deployment & Adoption Lead, I led and supported deployment of the Team-Based Care operating model across neighbourhood operations. I translated the future-state model into practical implementation activities spanning operational readiness, workforce planning, workforce optimisation, data validation, training, stakeholder engagement, change adoption and post-deployment support.",
 
     approach:
-      "I used a structured readiness and adoption approach for each neighbourhood, assessing workforce capability, customer and service demand, operational capacity, data quality, competing change, implementation risks and go-live readiness. This allowed issues to be identified and addressed before deployment while supporting frontline teams through adoption of new ways of working.",
+      "I used a structured readiness and adoption approach for each neighbourhood, assessing customer and service demand, workforce capability, enterprise agreement and award requirements, employee availability, contracted hours, workforce capacity, operational data, competing change, implementation risks and go-live readiness. Readiness activities considered not only workforce efficiency but also continuity of care, customer preferences, familiar care relationships and the practical impact of new rostering approaches on frontline teams. I worked across operational, project and technology stakeholders to support a model that was practical for current operations while remaining aligned with the organisation's future Salesforce Health Cloud transformation.",
 
     activities: [
       "Led operational readiness assessments across 26 neighbourhoods",
       "Analysed workforce demand, utilisation, capacity and service requirements",
-      "Identified workforce and capability gaps ahead of deployment",
-      "Partnered with operational leaders on workforce optimisation strategies",
+      "Reviewed workforce constraints including enterprise agreements, awards, contracted hours, employee availability and rostering requirements",
+      "Identified workforce, capability, service and data gaps ahead of deployment",
+      "Partnered with operational leaders to support workforce optimisation strategies",
       "Validated customer care plans, service information and operational data",
+      "Supported alignment between customer requirements and available workforce capability",
+      "Considered continuity of care, familiar care relationships and customer preferences within readiness planning",
+      "Supported operational preparation for optimised roster and schedule generation",
+      "Supported processes for ongoing roster maintenance and management of operational disruptions",
+      "Supported alignment of workforce and operational requirements with future Salesforce Health Cloud processes",
       "Coordinated deployment planning, go-live readiness and hypercare",
+      "Developed and delivered training and communication materials for frontline teams",
       "Supported workforce training, communication and frontline adoption",
       "Monitored adoption barriers and coordinated targeted remediation",
-      "Supported implementation of workforce optimisation processes producing approximately 12,000 scheduling files each fortnight",
+      "Supported deployment of workforce optimisation processes operating at a scale of approximately 12,000 scheduling files each fortnight",
     ],
 
     outcomes: [
@@ -87,24 +110,48 @@ export const projects: Project[] = [
       },
       {
         value: "Stronger",
-        label: "Frontline readiness and change adoption",
+        label: "Frontline readiness and sustainable adoption",
       },
     ],
 
+    publishedOutcomes: [
+      {
+        value: "15%",
+        label: "Reduction in cost to service a home visit",
+      },
+      {
+        value: "15%",
+        label: "Reduction in average travel minutes per visit",
+      },
+      {
+        value: "60% → 90%",
+        label: "Increase in visits delivered as planned",
+      },
+    ],
+
+    publishedOutcomesContext:
+      "Independent program-level results reported by Biarri following implementation of its workforce optimisation technology with Australian Unity. These outcomes reflect the broader transformation programme and are shown separately from my individual project contribution.",
+
+    publishedOutcomesSource:
+      "Biarri Home Care Scheduling + Rostering - Australian Unity Case Study",
+
+    publishedOutcomesSourceUrl:
+      "https://biarri.com/wp-content/uploads/2025/01/Biarri-Home-Care-Scheduling-Rostering-Australian-Unity-Case-Study.pdf",
+
     technology: [
-      "Procura",
+      "Procura (AlayaCare)",
       "Biarri",
       "Salesforce Health Cloud",
-      "Miro",
-      "Visio",
-      "Jira",
-      "Confluence",
+      "Wrike",
+      "SharePoint",
       "Microsoft Excel",
+      "Microsoft PowerPoint",
       "Microsoft Teams",
+      "Outlook",
     ],
 
     lessons:
-      "Successful operating model transformation depends on understanding how workforce capacity, customer demand, operational processes and frontline capability interact before implementation. Structured readiness and adoption planning helped reduce deployment risk while supporting sustainable new ways of working.",
+      "Successful workforce transformation requires more than implementing optimisation technology. The operating model needed to account for workforce agreements, customer needs, workforce capability, data quality, operational realities and future technology architecture. Building those requirements into readiness and deployment activities helped support both immediate operational improvement and the organisation's longer-term Salesforce Health Cloud transformation.",
   },
 
   {
@@ -132,9 +179,18 @@ export const projects: Project[] = [
     ],
 
     kpis: [
-      { value: "45,000+", label: "Customer records prepared" },
-      { value: "4,000+", label: "Employees across service delivery" },
-      { value: "53+", label: "Neighbourhood deployments supported" },
+      {
+        value: "45,000+",
+        label: "Customer records prepared",
+      },
+      {
+        value: "4,000+",
+        label: "Employees across service delivery",
+      },
+      {
+        value: "53+",
+        label: "Neighbourhood deployments supported",
+      },
     ],
 
     overview:
@@ -179,7 +235,7 @@ export const projects: Project[] = [
 
     technology: [
       "Salesforce Health Cloud",
-      "Procura powered by AlayaCare",
+      "Procura (AlayaCare)",
       "AlayaCare",
       "SAP SuccessFactors Employee Central",
       "Jira",
@@ -220,9 +276,18 @@ export const projects: Project[] = [
     ],
 
     kpis: [
-      { value: "100%", label: "Scenario coverage" },
-      { value: "Cross-team", label: "UAT participation enabled" },
-      { value: "Centralised", label: "Jira defect management" },
+      {
+        value: "100%",
+        label: "Scenario coverage",
+      },
+      {
+        value: "Cross-team",
+        label: "UAT participation enabled",
+      },
+      {
+        value: "Centralised",
+        label: "Jira defect management",
+      },
     ],
 
     overview:
@@ -298,9 +363,18 @@ export const projects: Project[] = [
     ],
 
     kpis: [
-      { value: "44", label: "Production test cases passed" },
-      { value: "97", label: "Validation scenarios" },
-      { value: "0", label: "Critical production defects" },
+      {
+        value: "44",
+        label: "Production test cases passed",
+      },
+      {
+        value: "97",
+        label: "Validation scenarios",
+      },
+      {
+        value: "0",
+        label: "Critical production defects",
+      },
     ],
 
     overview:
@@ -382,9 +456,18 @@ export const projects: Project[] = [
     ],
 
     kpis: [
-      { value: "40+", label: "Neighbourhoods supported" },
-      { value: "2", label: "Organisations integrated" },
-      { value: "1", label: "Operational platform" },
+      {
+        value: "40+",
+        label: "Neighbourhoods supported",
+      },
+      {
+        value: "2",
+        label: "Organisations integrated",
+      },
+      {
+        value: "1",
+        label: "Operational platform",
+      },
     ],
 
     overview:
@@ -427,7 +510,7 @@ export const projects: Project[] = [
     ],
 
     technology: [
-      "Procura",
+      "Procura (AlayaCare)",
       "Microsoft Excel",
       "Microsoft Teams",
       "SharePoint",
@@ -465,9 +548,18 @@ export const projects: Project[] = [
     ],
 
     kpis: [
-      { value: "1", label: "Critical service restored" },
-      { value: "$0", label: "Additional licensing cost" },
-      { value: "100%", label: "Eligibility capability restored" },
+      {
+        value: "1",
+        label: "Critical service restored",
+      },
+      {
+        value: "$0",
+        label: "Additional licensing cost",
+      },
+      {
+        value: "100%",
+        label: "Eligibility capability restored",
+      },
     ],
 
     overview:
@@ -544,9 +636,18 @@ export const projects: Project[] = [
     ],
 
     kpis: [
-      { value: "1", label: "BA community established" },
-      { value: "Centralised", label: "BA knowledge hub created" },
-      { value: "Monthly", label: "Capability uplift sessions" },
+      {
+        value: "1",
+        label: "BA community established",
+      },
+      {
+        value: "Centralised",
+        label: "BA knowledge hub created",
+      },
+      {
+        value: "Monthly",
+        label: "Capability uplift sessions",
+      },
     ],
 
     overview:
