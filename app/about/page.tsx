@@ -1,36 +1,53 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Compass, HeartHandshake, ShieldCheck, Sparkles } from "lucide-react"
+import {
+  ArrowRight,
+  Compass,
+  HeartHandshake,
+  ShieldCheck,
+  Sparkles,
+} from "lucide-react"
 import { PageHeader } from "@/components/page-header"
 import { person } from "@/lib/site"
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About Ashlea Davies — transformation delivery, operational readiness, stakeholder engagement and customer-focused change.",
+    "About Ashlea Davies — healthcare transformation, operational readiness, deployment and adoption, business improvement and business analysis.",
 }
+
+const serviceEnvironments = [
+  "Aged Care & Support at Home",
+  "Home & Community Care",
+  "Residential Aged Care",
+  "Disability Services",
+  "Allied Health",
+  "Community Nursing",
+  "Healthcare Operations",
+  "Community Services",
+]
 
 const values = [
   {
     icon: Compass,
-    title: "Customer outcomes",
-    body: "Every transformation decision should improve outcomes for customers while remaining practical for the people delivering the service.",
+    title: "Operationally grounded transformation",
+    body: "Transformation should work in practice, not just on paper. I bring frontline and operational experience into decision-making so solutions are practical, scalable and sustainable.",
   },
   {
     icon: HeartHandshake,
     title: "Operational readiness",
-    body: "Preparing organisations, teams and technology for successful adoption through planning, risk management and operational readiness.",
+    body: "Preparing organisations, teams and technology for successful adoption through planning, risk management, workforce readiness and implementation support.",
   },
   {
     icon: ShieldCheck,
-    title: "Frontline-informed delivery",
-    body: "Years of operational experience help me design solutions that work in practice because they're grounded in how services are actually delivered.",
+    title: "Customer & service outcomes",
+    body: "Transformation should improve customer outcomes while protecting service continuity and supporting the employees responsible for delivering care and services.",
   },
   {
     icon: Sparkles,
     title: "Sustainable transformation",
-    body: "Turning strategy into measurable operational improvements through practical implementation, sustainable adoption and continuous service improvement.",
+    body: "Turning strategy into measurable operational improvement through practical implementation, adoption, continuous improvement and strong stakeholder ownership.",
   },
 ]
 
@@ -44,6 +61,7 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-6xl px-5 pb-16 pt-8 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          {/* Profile */}
           <div className="lg:sticky lg:top-24 lg:self-start">
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
               <Image
@@ -58,58 +76,123 @@ export default function AboutPage() {
 
             <div className="mt-6 rounded-2xl border border-border bg-card p-6">
               <p className="text-sm font-semibold">{person.name}</p>
-              <p className="mt-1 text-sm font-medium text-muted-foreground">
-  Transformation Consultant
-</p>
 
-<p className="mt-2 text-sm text-muted-foreground">
-  Business Analysis • Operational Readiness • Deployment
-</p>
-              <p className="mt-3 text-sm text-muted-foreground">{person.location}</p>
+              <p className="mt-1 text-sm font-medium text-muted-foreground">
+                Healthcare Transformation Consultant
+              </p>
+
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Operational Readiness • Deployment & Adoption • Business Analysis
+              </p>
+
+              <p className="mt-3 text-sm text-muted-foreground">
+                {person.location}
+              </p>
             </div>
           </div>
 
+          {/* About content */}
           <div className="space-y-6 text-pretty text-lg leading-relaxed text-foreground/80">
             <p>
-  My career has progressed from frontline service delivery through operational leadership, deployment consulting and business analysis. That journey gives me a practical perspective on transformation, allowing me to bridge strategy, customer outcomes and frontline operations so change is practical, measurable and successfully adopted by the people delivering services every day.
-</p>
+              My career has progressed across 15+ years from frontline
+              healthcare and community service delivery through service
+              coordination, operational leadership, enterprise deployment,
+              deployment and adoption, and business analysis. That journey
+              gives me a practical end-to-end perspective on transformation
+              and allows me to bridge strategy, technology, customer outcomes
+              and frontline operations so change is practical, measurable and
+              sustainable.
+            </p>
 
             <p>
-  I help organisations move from strategy to successful delivery by bringing together business analysis, operational readiness, stakeholder engagement and deployment planning. My role is creating the conditions that allow technology, people and operational change to succeed together.
-</p>
+              I help organisations move from strategy to successful delivery
+              by bringing together business analysis, business improvement,
+              operational readiness, stakeholder engagement and deployment
+              planning. My role is creating the conditions that allow
+              technology, people, processes and operational change to succeed
+              together.
+            </p>
 
             <p>
-  Much of my experience has been gained within complex healthcare and community service environments, where successful change directly impacts customers, employees and vulnerable communities. Working in these settings has shaped my approach to transformation, placing equal importance on operational excellence, customer outcomes and sustainable adoption.
-</p>
+              Much of my experience has been gained within complex healthcare
+              and community service environments, where successful change
+              directly affects customers, employees and service delivery.
+              Working in these settings has shaped my approach to
+              transformation, placing equal importance on operational
+              excellence, customer outcomes and sustainable adoption.
+            </p>
 
             <p>
-  Business analysis is one capability within my broader transformation experience. I use it to understand problems, align stakeholders, shape practical solutions and translate strategy into operational outcomes that last beyond go-live.
-</p>
-<h2 className="font-serif text-2xl font-semibold">
-  What I bring to transformation
-</h2>
+              Business analysis is one capability within my broader
+              transformation experience. I use it to understand problems,
+              align stakeholders, shape practical solutions and translate
+              strategy into operational outcomes that remain effective beyond
+              go-live.
+            </p>
 
-<p className="text-muted-foreground">
-  The principles that shape how I deliver complex change.
-</p>
-            <div className="grid gap-4 pt-4 sm:grid-cols-2">
-              {values.map((v) => (
-                <div key={v.title} className="rounded-2xl border border-border bg-card p-6">
-                  <span className="flex size-10 items-center justify-center rounded-lg bg-secondary text-primary">
-                    <v.icon className="size-5" />
+            {/* Industries & service environments */}
+            <div className="pt-4">
+              <h2 className="font-serif text-2xl font-semibold text-foreground">
+                Industries & service environments
+              </h2>
+
+              <p className="mt-2 text-base text-muted-foreground">
+                Experience spanning frontline service delivery, operational
+                leadership and enterprise transformation across healthcare and
+                community services.
+              </p>
+
+              <div className="mt-5 flex flex-wrap gap-2">
+                {serviceEnvironments.map((service) => (
+                  <span
+                    key={service}
+                    className="rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground/80"
+                  >
+                    {service}
                   </span>
-                  <h3 className="mt-4 font-serif text-lg font-semibold">{v.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{v.body}</p>
+                ))}
+              </div>
+            </div>
+
+            {/* Transformation principles */}
+            <div className="pt-6">
+              <h2 className="font-serif text-2xl font-semibold text-foreground">
+                What I bring to transformation
+              </h2>
+
+              <p className="mt-2 text-base text-muted-foreground">
+                The principles that shape how I deliver complex change.
+              </p>
+            </div>
+
+            <div className="grid gap-4 pt-2 sm:grid-cols-2">
+              {values.map((value) => (
+                <div
+                  key={value.title}
+                  className="rounded-2xl border border-border bg-card p-6"
+                >
+                  <span className="flex size-10 items-center justify-center rounded-lg bg-secondary text-primary">
+                    <value.icon className="size-5" />
+                  </span>
+
+                  <h3 className="mt-4 font-serif text-lg font-semibold text-foreground">
+                    {value.title}
+                  </h3>
+
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {value.body}
+                  </p>
                 </div>
               ))}
             </div>
 
+            {/* CTA */}
             <div className="pt-4">
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
               >
-                Let’s connect
+                Let&apos;s connect
                 <ArrowRight className="size-4" />
               </Link>
             </div>
