@@ -14,6 +14,8 @@ import {
   UserRound,
   Workflow,
   Cpu,
+  ExternalLink,
+  ChartNoAxesCombined,
 } from "lucide-react"
 import { getProject, projects } from "@/lib/projects"
 
@@ -28,8 +30,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const project = getProject(slug)
-  if (!project) return { title: "Project not found" }
-  return { title: project.title, description: project.summary }
+
+  if (!project) {
+    return { title: "Project not found" }
+  }
+
+  return {
+    title: project.title,
+    description: project.summary,
+  }
 }
 
 function Section({
@@ -47,9 +56,15 @@ function Section({
         <span className="flex size-9 items-center justify-center rounded-lg bg-secondary text-primary">
           <Icon className="size-4.5" />
         </span>
-        <h2 className="font-serif text-2xl font-semibold tracking-tight">{title}</h2>
+
+        <h2 className="font-serif text-2xl font-semibold tracking-tight">
+          {title}
+        </h2>
       </div>
-      <div className="mt-4 text-pretty leading-relaxed text-foreground/80">{children}</div>
+
+      <div className="mt-4 text-pretty leading-relaxed text-foreground/80">
+        {children}
+      </div>
     </section>
   )
 }
@@ -61,13 +76,17 @@ export default async function ProjectPage({
 }) {
   const { slug } = await params
   const project = getProject(slug)
-  if (!project) notFound()
+
+  if (!project) {
+    notFound()
+  }
 
   const index = projects.findIndex((p) => p.slug === slug)
   const next = projects[(index + 1) % projects.length]
 
   return (
     <article>
+      {/* Project Header */}
       <div className="mx-auto max-w-4xl px-5 pt-12 lg:px-8 lg:pt-16">
         <Link
           href="/projects"
@@ -87,11 +106,15 @@ export default async function ProjectPage({
           {project.title}
         </h1>
 
-        <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">{project.summary}</p>
+        <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
+          {project.summary}
+        </p>
 
+        {/* Project Details */}
         <dl className="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-border bg-card p-6 sm:grid-cols-3">
           <div className="flex items-start gap-3">
             <Building2 className="mt-0.5 size-4 text-primary" />
+
             <div>
               <dt className="text-xs text-muted-foreground">Client</dt>
               <dd className="text-sm font-medium">{project.client}</dd>
@@ -100,6 +123,7 @@ export default async function ProjectPage({
 
           <div className="flex items-start gap-3">
             <CalendarDays className="mt-0.5 size-4 text-primary" />
+
             <div>
               <dt className="text-xs text-muted-foreground">Year</dt>
               <dd className="text-sm font-medium">{project.year}</dd>
@@ -108,6 +132,7 @@ export default async function ProjectPage({
 
           <div className="flex items-start gap-3">
             <Clock className="mt-0.5 size-4 text-primary" />
+
             <div>
               <dt className="text-xs text-muted-foreground">Duration</dt>
               <dd className="text-sm font-medium">{project.duration}</dd>
@@ -115,16 +140,26 @@ export default async function ProjectPage({
           </div>
         </dl>
 
+        {/* Project Scale KPIs */}
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
           {project.kpis.map((kpi) => (
-            <div key={kpi.label} className="rounded-2xl border border-border bg-card p-5 text-center">
-              <p className="font-serif text-3xl font-semibold text-primary">{kpi.value}</p>
-              <p className="mt-1 text-xs text-muted-foreground">{kpi.label}</p>
+            <div
+              key={kpi.label}
+              className="rounded-2xl border border-border bg-card p-5 text-center"
+            >
+              <p className="font-serif text-3xl font-semibold text-primary">
+                {kpi.value}
+              </p>
+
+              <p className="mt-1 text-xs text-muted-foreground">
+                {kpi.label}
+              </p>
             </div>
           ))}
         </div>
       </div>
 
+      {/* Case Study Content */}
       <div className="mx-auto max-w-4xl space-y-12 px-5 py-14 lg:px-8">
         <Section icon={Lightbulb} title="Overview">
           <p>{project.overview}</p>
@@ -149,22 +184,85 @@ export default async function ProjectPage({
                 <span className="absolute -left-[1.9rem] flex size-6 items-center justify-center rounded-full border border-border bg-card text-xs font-semibold text-primary">
                   {i + 1}
                 </span>
-                <p className="text-sm leading-relaxed text-foreground/80">{activity}</p>
+
+                <p className="text-sm leading-relaxed text-foreground/80">
+                  {activity}
+                </p>
               </li>
             ))}
           </ol>
         </Section>
 
+        {/* My / Project Delivery Outcomes */}
         <Section icon={TrendingUp} title="Business Outcomes">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-            {project.outcomes.map((o) => (
-              <div key={o.label} className="rounded-2xl border border-border bg-secondary p-5 text-center">
-                <p className="font-serif text-3xl font-semibold text-primary">{o.value}</p>
-                <p className="mt-1 text-xs text-muted-foreground">{o.label}</p>
+            {project.outcomes.map((outcome) => (
+              <div
+                key={outcome.label}
+                className="rounded-2xl border border-border bg-secondary p-5 text-center"
+              >
+                <p className="font-serif text-3xl font-semibold text-primary">
+                  {outcome.value}
+                </p>
+
+                <p className="mt-1 text-xs text-muted-foreground">
+                  {outcome.label}
+                </p>
               </div>
             ))}
           </div>
         </Section>
+
+        {/* Independently Published Program Outcomes */}
+        {project.publishedOutcomes &&
+          project.publishedOutcomes.length > 0 && (
+            <Section
+              icon={ChartNoAxesCombined}
+              title="Published Program Outcomes"
+            >
+              {project.publishedOutcomesContext && (
+                <p className="mb-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+                  {project.publishedOutcomesContext}
+                </p>
+              )}
+
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                {project.publishedOutcomes.map((outcome) => (
+                  <div
+                    key={outcome.label}
+                    className="rounded-2xl border border-primary/20 bg-primary/5 p-5 text-center"
+                  >
+                    <p className="font-serif text-3xl font-semibold text-primary">
+                      {outcome.value}
+                    </p>
+
+                    <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                      {outcome.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {project.publishedOutcomesSource &&
+                project.publishedOutcomesSourceUrl && (
+                  <div className="mt-5 rounded-xl border border-border bg-card p-4">
+                    <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                      Independent Source
+                    </p>
+
+                    <a
+                      href={project.publishedOutcomesSourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 inline-flex items-center gap-1.5 text-sm font-medium text-primary underline-offset-4 hover:underline"
+                    >
+                      {project.publishedOutcomesSource}
+                      <ExternalLink className="size-3.5" />
+                    </a>
+                  </div>
+                )}
+            </Section>
+          )}
 
         <Section icon={Cpu} title="Technology">
           <div className="flex flex-wrap gap-2">
@@ -184,14 +282,20 @@ export default async function ProjectPage({
         </Section>
       </div>
 
+      {/* Next Project */}
       <div className="mx-auto max-w-4xl px-5 pb-20 lg:px-8">
         <Link
           href={`/projects/${next.slug}`}
           className="group flex flex-col items-start justify-between gap-4 rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary/40 sm:flex-row sm:items-center"
         >
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Next case study</p>
-            <p className="mt-1 font-serif text-xl font-semibold">{next.title}</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              Next case study
+            </p>
+
+            <p className="mt-1 font-serif text-xl font-semibold">
+              {next.title}
+            </p>
           </div>
 
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-colors group-hover:bg-secondary">

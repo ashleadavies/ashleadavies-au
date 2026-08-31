@@ -37,7 +37,7 @@ export const projects: Project[] = [
     category: "Operating Model Transformation",
 
     summary:
-      "Led deployment and adoption of a Team-Based Care operating model across 26 neighbourhoods supporting 33,000+ customers, aligning workforce optimisation, operational readiness, service delivery and frontline adoption.",
+      "Led a multidisciplinary deployment and adoption stream for the rollout of a Team-Based Care operating model across 26 neighbourhoods supporting 33,000+ customers, coordinating operational readiness, workforce optimisation, data readiness, communications, training and frontline adoption.",
 
     year: "2024–2025",
 
@@ -51,6 +51,7 @@ export const projects: Project[] = [
       "Workforce Optimisation",
       "Deployment & Adoption",
       "Change Adoption",
+      "Cross-Functional Leadership",
     ],
 
     kpis: [
@@ -69,33 +70,35 @@ export const projects: Project[] = [
     ],
 
     overview:
-      "Facing growing demand for home and community care, workforce constraints and increasingly complex rostering requirements, a national healthcare provider introduced a Team-Based Care operating model supported by Biarri workforce optimisation technology. The model moved operations beyond traditional Procura-based and manual rostering processes toward a more data-driven approach to workforce planning, service allocation and scheduling. The transformation was deployed across 26 neighbourhoods supporting more than 33,000 customers and required significant workforce, operational, data and change readiness before implementation.",
+      "Facing growing demand for home and community care, workforce constraints and increasingly complex rostering requirements, a national healthcare provider introduced a Team-Based Care operating model supported by Biarri workforce optimisation technology. The model moved operations beyond traditional Procura-based and manual rostering processes toward a more data-driven approach to workforce planning, service allocation and scheduling. The transformation was deployed across 26 neighbourhoods supporting more than 33,000 customers and required coordinated workforce, operational, data, communication, training and change readiness before implementation.",
 
     challenge:
       "Each neighbourhood had different workforce capacity, customer demand, service requirements, data quality and operational readiness risks that needed to be understood before deployment. Workforce planning also needed to account for different enterprise agreements and awards, employee availability, contracted hours, rostering constraints, travel requirements and customer service time windows while maintaining continuity of care and familiar care relationships. The operating model, workforce rules and supporting data also needed to be designed with the organisation's longer-term technology transformation in mind so the model could transition into Salesforce Health Cloud rather than becoming a short-term solution.",
 
     role:
-      "Initially as Deployment Consultant and subsequently as Deployment & Adoption Lead, I led and supported deployment of the Team-Based Care operating model across neighbourhood operations. I translated the future-state model into practical implementation activities spanning operational readiness, workforce planning, workforce optimisation, data validation, training, stakeholder engagement, change adoption and post-deployment support.",
+      "Initially as Deployment Consultant and subsequently as Deployment & Adoption Lead, I led a multidisciplinary deployment stream responsible for preparing neighbourhoods for implementation and adoption of the Team-Based Care operating model. I led and coordinated Deployment Analysts and DRSWAT resources, together with specialist Deployment Consultants supporting communications and data readiness. Reporting into the Program Manager, I worked closely with the Change Manager, Technology Lead, TCACO Lead, Branch Deployment Leads and the TC+ optimisation team to coordinate operational readiness, workforce and data preparation, communications, training, deployment and adoption across the programme.",
 
     approach:
-      "I used a structured readiness and adoption approach for each neighbourhood, assessing customer and service demand, workforce capability, enterprise agreement and award requirements, employee availability, contracted hours, workforce capacity, operational data, competing change, implementation risks and go-live readiness. Readiness activities considered not only workforce efficiency but also continuity of care, customer preferences, familiar care relationships and the practical impact of new rostering approaches on frontline teams. I worked across operational, project and technology stakeholders to support a model that was practical for current operations while remaining aligned with the organisation's future Salesforce Health Cloud transformation.",
+      "I led a structured, cross-functional readiness and adoption approach for each neighbourhood, coordinating deployment analysts and specialist communications and data resources while working closely with programme, change, technology, branch deployment and workforce optimisation teams. Readiness assessments considered customer and service demand, workforce capability, enterprise agreement and award requirements, employee availability, contracted hours, data quality, operational capacity, competing change and implementation risk. The approach also considered continuity of care, customer preferences and familiar care relationships while ensuring the operating model and supporting workforce requirements could transition into the organisation's future Salesforce Health Cloud environment.",
 
     activities: [
+      "Led a multidisciplinary deployment and adoption stream across the Team-Based Care programme",
+      "Led and coordinated Deployment Analysts and DRSWAT resources supporting neighbourhood readiness and deployment",
+      "Coordinated specialist Deployment Consultant support across communications and data readiness",
+      "Worked closely with the Program Manager, Change Manager, Technology Lead, TCACO Lead, Branch Deployment Leads and TC+ optimisation team",
       "Led operational readiness assessments across 26 neighbourhoods",
-      "Analysed workforce demand, utilisation, capacity and service requirements",
-      "Reviewed workforce constraints including enterprise agreements, awards, contracted hours, employee availability and rostering requirements",
-      "Identified workforce, capability, service and data gaps ahead of deployment",
-      "Partnered with operational leaders to support workforce optimisation strategies",
-      "Validated customer care plans, service information and operational data",
-      "Supported alignment between customer requirements and available workforce capability",
+      "Oversaw analysis of workforce demand, utilisation, capacity and service requirements",
+      "Assessed workforce constraints including enterprise agreements, awards, contracted hours, employee availability and rostering requirements",
+      "Coordinated identification and remediation of workforce, capability, service and data gaps ahead of deployment",
+      "Partnered with operational leaders on workforce optimisation and implementation readiness",
+      "Oversaw validation of customer care plans, service information and operational data",
+      "Coordinated data readiness, communications, training and frontline adoption activities",
       "Considered continuity of care, familiar care relationships and customer preferences within readiness planning",
-      "Supported operational preparation for optimised roster and schedule generation",
+      "Supported operational preparation for optimised roster and schedule generation through Biarri",
       "Supported processes for ongoing roster maintenance and management of operational disruptions",
-      "Supported alignment of workforce and operational requirements with future Salesforce Health Cloud processes",
       "Coordinated deployment planning, go-live readiness and hypercare",
-      "Developed and delivered training and communication materials for frontline teams",
-      "Supported workforce training, communication and frontline adoption",
-      "Monitored adoption barriers and coordinated targeted remediation",
+      "Monitored adoption, operational issues and implementation risks and coordinated targeted remediation",
+      "Supported alignment of the Team-Based Care operating model with the future Salesforce Health Cloud environment",
       "Supported deployment of workforce optimisation processes operating at a scale of approximately 12,000 scheduling files each fortnight",
     ],
 
@@ -151,7 +154,7 @@ export const projects: Project[] = [
     ],
 
     lessons:
-      "Successful workforce transformation requires more than implementing optimisation technology. The operating model needed to account for workforce agreements, customer needs, workforce capability, data quality, operational realities and future technology architecture. Building those requirements into readiness and deployment activities helped support both immediate operational improvement and the organisation's longer-term Salesforce Health Cloud transformation.",
+      "Successful workforce transformation requires more than implementing optimisation technology. The operating model needed to account for workforce agreements, customer needs, workforce capability, data quality, operational realities and future technology architecture. Leading deployment across multiple specialist streams also reinforced the importance of clear cross-functional coordination, defined ownership and practical readiness planning when translating a complex operating model into sustainable frontline ways of working.",
   },
 
   {
