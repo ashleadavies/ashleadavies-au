@@ -15,14 +15,14 @@ export const person = {
   name: "Ashlea Davies",
 
   roles: [
-    "Transformation Consultant",
-    "Business Analysis",
+    "Healthcare Transformation",
+    "Business Improvement",
     "Operational Readiness",
-    "Deployment & Adoption"
+    "Deployment & Adoption",
   ],
 
   tagline:
-    "I bridge strategy, customer outcomes and frontline operations through business analysis, operational readiness and deployment. I help organisations deliver change that is practical, measurable and embraced by the people responsible for making it succeed.",
+    "I bridge strategy, technology and frontline operations through business analysis, operational readiness and deployment. Drawing on 15+ years across healthcare and community services, I help organisations turn complex transformation into practical, sustainable change that works for customers, employees and service delivery.",
 
   location: "Lockhart, NSW, Australia",
 
@@ -49,18 +49,18 @@ export const person = {
 export const stats = [
   {
     value: "45,000+",
-    label: "Customer records reviewed and prepared for migration",
+    label: "Customer records prepared for transformation",
   },
   {
-    value: "3,000+",
-    label: "Employees supported through transformation and adoption",
+    value: "4,000+",
+    label: "Employees across service delivery",
   },
   {
     value: "53+",
-    label: "Neighbourhood deployments delivered across Australia",
+    label: "Neighbourhood deployments",
   },
   {
-    value: "5",
-    label: "Progressive roles across operations, deployment and business analysis",
+    value: "15+ years",
+    label: "Healthcare, operations & transformation experience",
   },
 ]
