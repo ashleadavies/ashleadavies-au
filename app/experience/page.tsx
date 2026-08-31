@@ -3,94 +3,146 @@ import { PageHeader } from "@/components/page-header"
 
 export const metadata: Metadata = {
   title: "Experience",
-  description: "Career history and professional experience of Ashlea Davies.",
+  description:
+    "Career history spanning healthcare transformation, operational readiness, deployment and adoption, business analysis, operational leadership and frontline healthcare and community services.",
 }
 
 const experience = [
   {
+    period: "Jan 2023 – Jun 2026",
+    role: "Deployment Consultant",
+    company: "Australian Unity | Home Health | Substantive Role",
+    summary:
+      "Substantive transformation role supporting enterprise deployment, operational readiness, customer and workforce data readiness, business integration and frontline adoption across Home Health.",
+    highlights: [
+      "Supported 53+ neighbourhood deployments across large-scale healthcare transformation initiatives",
+      "Worked within transformation environments involving 45,000+ customer records and 4,000+ employees across service delivery",
+      "Coordinated customer, workforce and service readiness ahead of deployment",
+      "Supported Salesforce Health Cloud transformation across Home Health, Community Nursing and Allied Healthcare",
+      "Led and supported data validation, readiness assessment, cutover preparation, go-live and post-deployment remediation",
+      "Coordinated operational readiness for acquired business integration across 40+ neighbourhoods",
+      "Worked across frontline operations, neighbourhood leadership, transformation and technology teams to resolve implementation risks",
+    ],
+    tags: [
+      "Operational Readiness",
+      "Enterprise Deployment",
+      "Healthcare Transformation",
+      "Data Readiness",
+      "Stakeholder Engagement",
+    ],
+  },
+  {
     period: "Jan 2026 – Jun 2026",
     role: "Business Analyst",
-    company: "Technology, Digital & Transformation",
+    company:
+      "Australian Unity | Technology, Digital & Transformation | Secondment",
     summary:
-      "Fixed-term secondment supporting enterprise initiatives across customer experience, contact centre technology and operational transformation.",
+      "Secondment delivering business analysis across enterprise healthcare technology, customer experience, contact centre and operational improvement initiatives.",
     highlights: [
-      "Delivered business analysis across Salesforce Health Cloud and Genesys Cloud initiatives",
-      "Led requirements workshops and stakeholder engagement across business and technology teams",
-      "Supported process mapping, UAT coordination, defect management and implementation documentation",
-      "Supported customer experience initiatives including IVR transformation and service enhancement programs",
+      "Delivered business analysis across Salesforce, Genesys Cloud and enterprise transformation initiatives",
+      "Facilitated discovery, requirements elicitation and stakeholder workshops across business and technology teams",
+      "Developed user stories, acceptance criteria, process documentation and implementation artefacts",
+      "Coordinated UAT, defect management, production validation and release readiness activities",
+      "Delivered business analysis and operational readiness for a Genesys Cloud IVR supporting a national mental health partnership",
+      "Designed an accessible UAT framework enabling external partners and internal testers without Jira access to participate in enterprise testing",
+      "Led root cause analysis and stakeholder coordination to restore a critical healthcare eligibility service",
     ],
-    tags: ["Business Analysis", "Salesforce Health Cloud", "Genesys Cloud", "UAT"],
+    tags: [
+      "Business Analysis",
+      "Requirements",
+      "UAT",
+      "Genesys Cloud",
+      "Salesforce",
+      "Process Improvement",
+    ],
   },
   {
-    period: "Jan 2023 – Jun 2026 substantive role",
-    role: "Deployment Consultant",
-    company: "Home Health Transformation",
-    summary:
-      "Substantive role supporting major transformation, implementation and business readiness initiatives across Home Health.",
-    highlights: [
-      "Supported enterprise-wide Salesforce Health Cloud transformation",
-      "Coordinated business readiness across nationally distributed operational teams",
-      "Led data remediation activities impacting approximately 43,500 customer records",
-      "Supported operational integration of acquired businesses",
-      "Delivered deployment, stakeholder engagement and transition support across transformation programs",
-    ],
-    tags: ["Deployment", "Business Readiness", "Data Remediation", "Stakeholder Engagement"],
-  },
-  {
-    period: "Jul 2024 – Jan 2025",
+    period: "Apr 2024 – Oct 2024",
     role: "Deployment & Adoption Lead",
-    company: "Secondment",
+    company: "Australian Unity | Home Health | Secondment",
     summary:
-      "Promotional secondment leading deployment and workforce transformation activities across national operations.",
+      "Secondment leading the Deployment Analyst and DRSWAT stream within a major Team-Based Care operating model transformation.",
     highlights: [
-      "Led deployment activities across 24 operational departments nationally",
-      "Supported workforce transformation impacting 3,200 employees and 32,000 clients",
-      "Delivered workforce optimisation initiatives improving scheduling efficiency and utilisation",
-      "Developed Tableau reporting dashboards for workforce performance and capacity planning",
+      "Led the Deployment Analyst and DRSWAT stream supporting Team-Based Care readiness and deployment",
+      "Supported rollout across 26 neighbourhoods serving 33,000+ customers",
+      "Directed neighbourhood readiness, workforce preparation, training, go-live and frontline adoption activities",
+      "Oversaw analysis of workforce demand, utilisation, capability, capacity and service requirements",
+      "Supported workforce optimisation processes operating at approximately 12,000 scheduling files each fortnight",
+      "Worked closely with program, change, technology, branch deployment, workforce optimisation and specialist communications and data resources",
+      "Supported alignment of operational requirements with the organisation's future Salesforce Health Cloud environment",
     ],
-    tags: ["Workforce Optimisation", "Reporting", "Deployment Leadership"],
+    tags: [
+      "Deployment Leadership",
+      "Workforce Optimisation",
+      "Operational Readiness",
+      "Change Adoption",
+      "Cross-Functional Leadership",
+    ],
   },
   {
     period: "Feb 2022 – Jan 2023",
     role: "Community Liaison Manager",
-    company: "Operational Leadership",
+    company: "Australian Unity | Home Health | Operational Leadership",
     summary:
-      "Operational leadership role responsible for service delivery, workforce leadership and stakeholder management.",
+      "Operational leadership role responsible for coordinating community-based service delivery, workforce performance, customer outcomes and stakeholder relationships.",
     highlights: [
-      "Managed multidisciplinary service delivery teams",
-      "Led client-centred care planning and service delivery activities",
-      "Managed escalations, complaints and service quality outcomes",
-      "Supported workforce capability, onboarding and operational performance initiatives",
+      "Led day-to-day service delivery across multidisciplinary community care environments",
+      "Managed customer escalations, complaints and service quality outcomes",
+      "Coordinated workforce capability, service requirements and operational priorities",
+      "Supported employee onboarding, workforce performance and service continuity",
+      "Built relationships across customers, families, frontline teams and internal stakeholders",
+      "Used frontline operational insight to identify and resolve service delivery issues",
     ],
-    tags: ["Service Delivery", "Stakeholder Management", "Operational Leadership"],
+    tags: [
+      "Operational Leadership",
+      "Service Delivery",
+      "Customer Outcomes",
+      "Workforce Coordination",
+      "Stakeholder Management",
+    ],
   },
   {
     period: "May 2019 – Feb 2022",
     role: "Service Coordinator",
-    company: "Home Health Operations",
+    company: "Australian Unity | Home Health | Service Operations",
     summary:
-      "Coordinated workforce scheduling and service delivery across regional operations.",
+      "Coordinated customer services and workforce scheduling within complex home and community care operations.",
     highlights: [
-      "Coordinated workforce scheduling and service delivery",
-      "Managed service escalations and operational improvement activities",
-      "Supported workforce continuity throughout COVID-19 operational challenges",
-      "Built strong stakeholder relationships across clinical and operational teams",
+      "Coordinated customer services across community and aged care environments",
+      "Managed workforce scheduling, service changes and day-to-day operational issues",
+      "Matched customer requirements with appropriate workforce capability and availability",
+      "Managed service escalations and worked with stakeholders to maintain continuity of care",
+      "Supported workforce and service continuity throughout COVID-19 operational disruption",
+      "Developed deep frontline knowledge of the systems, processes and operational realities later addressed through transformation programs",
     ],
-    tags: ["Scheduling", "Service Coordination", "Operations"],
+    tags: [
+      "Service Coordination",
+      "Scheduling",
+      "Customer Service",
+      "Workforce Coordination",
+      "Home & Community Care",
+    ],
   },
   {
-    period: "2015 – 2019",
-    role: "Earlier Roles",
-    company: "Frontline Care & Community Services",
+    period: "2011 – 2019",
+    role: "Earlier Healthcare & Community Services",
+    company: "Frontline Care, Community Services & Health",
     summary:
-      "Earlier frontline roles across disability support, community care, nursing support and diversional therapy.",
+      "Earlier roles across residential aged care, community care, disability support, nursing support and diversional therapy established the frontline service experience that now informs my approach to transformation.",
     highlights: [
-      "Community Care Coordinator, LiveBetter, 2018–2019",
-      "Disability Support Worker, CareWest / LiveBetter, 2016–2018",
-      "Assistant in Nursing, Warren GWAHS, 2015–2017",
-      "Diversional Therapist, Gilgandra GWAHS, 2016–2017",
+      "Community Care Coordinator | LiveBetter | 2018–2019",
+      "Disability Support Worker | CareWest / LiveBetter | 2016–2018",
+      "Assistant in Nursing | Warren GWAHS | 2015–2017",
+      "Diversional Therapist | Gilgandra GWAHS | 2016–2017",
+      "Assistant in Nursing | Emily Gardens Residential Aged Care | 2011–2014",
     ],
-    tags: ["Frontline Care", "Community Services", "Customer Support"],
+    tags: [
+      "Frontline Healthcare",
+      "Community Services",
+      "Aged Care",
+      "Disability Services",
+      "Service Delivery",
+    ],
   },
 ]
 
@@ -99,28 +151,59 @@ export default function ExperiencePage() {
     <>
       <PageHeader
         eyebrow="Experience"
-        title="A career built across frontline operations, deployment, transformation and business analysis"
-        description="More than seven years progressing through operational, leadership, deployment and transformation roles, with experience across healthcare, community services, aged care, Salesforce Health Cloud, Genesys Cloud, operational readiness and customer-focused change."
+        title="From frontline healthcare to enterprise transformation"
+        description="More than 15 years of experience progressing through frontline healthcare and community services, service coordination, operational leadership, deployment and adoption, operational readiness and business analysis."
       />
 
       <section className="mx-auto max-w-4xl px-5 pb-20 pt-8 lg:px-8">
+        <div className="mb-10 rounded-2xl border border-border bg-card p-6">
+          <p className="text-sm leading-relaxed text-foreground/80">
+            My career progression gives me an end-to-end perspective on
+            transformation. I understand how strategy, technology, customer
+            requirements, workforce capability and frontline operations connect
+            because I have worked across each layer of service delivery, from
+            direct care and operational coordination through to enterprise
+            deployment and business analysis.
+          </p>
+        </div>
+
         <ol className="relative border-l border-border">
           {experience.map((item) => (
-            <li key={item.role} className="mb-10 ml-8 last:mb-0">
+            <li
+              key={`${item.role}-${item.period}`}
+              className="mb-10 ml-8 last:mb-0"
+            >
               <span className="absolute -left-[9px] flex size-4 items-center justify-center rounded-full border-2 border-primary bg-background" />
+
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow hover:shadow-md">
-                <p className="text-xs font-semibold uppercase tracking-wider text-primary">{item.period}</p>
-                <h2 className="mt-2 font-serif text-xl font-semibold tracking-tight">{item.role}</h2>
-                <p className="text-sm font-medium text-muted-foreground">{item.company}</p>
-                <p className="mt-3 text-pretty text-sm leading-relaxed text-foreground/80">{item.summary}</p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+                  {item.period}
+                </p>
+
+                <h2 className="mt-2 font-serif text-xl font-semibold tracking-tight">
+                  {item.role}
+                </h2>
+
+                <p className="text-sm font-medium text-muted-foreground">
+                  {item.company}
+                </p>
+
+                <p className="mt-3 text-pretty text-sm leading-relaxed text-foreground/80">
+                  {item.summary}
+                </p>
+
                 <ul className="mt-4 space-y-2">
-                  {item.highlights.map((h) => (
-                    <li key={h} className="flex gap-2 text-sm text-foreground/80">
+                  {item.highlights.map((highlight) => (
+                    <li
+                      key={highlight}
+                      className="flex gap-2 text-sm text-foreground/80"
+                    >
                       <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary" />
-                      {h}
+                      {highlight}
                     </li>
                   ))}
                 </ul>
+
                 <div className="mt-5 flex flex-wrap gap-2">
                   {item.tags.map((tag) => (
                     <span
