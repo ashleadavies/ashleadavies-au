@@ -1,7 +1,12 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, ArrowUpRight, CheckCircle2 } from "lucide-react"
+import {
+  ArrowRight,
+  ArrowUpRight,
+  CheckCircle2,
+} from "lucide-react"
+
 import { ProjectCard } from "@/components/project-card"
 import { person, stats } from "@/lib/site"
 import { projects } from "@/lib/projects"
@@ -33,22 +38,20 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
-  /*
-   * Select featured projects deliberately rather than relying on their
-   * position in the projects array.
-   *
-   * Check these slugs against /lib/projects.ts and update them if your
-   * actual slug names differ.
-   */
   const featuredSlugs = [
     "team-based-care-operating-model",
-    "enterprise-home-health-crm-transformation",
-    "genesys-ivr-enhancement",
+    "home-health-salesforce-transformation",
+    "genesysivr-enhancement",
   ]
 
   const featured = featuredSlugs
-    .map((slug) => projects.find((project) => project.slug === slug))
-    .filter((project): project is (typeof projects)[number] => Boolean(project))
+    .map((slug) =>
+      projects.find((project) => project.slug === slug)
+    )
+    .filter(
+      (project): project is (typeof projects)[number] =>
+        Boolean(project)
+    )
 
   const careerProgression = [
     "Business Analyst",
@@ -144,6 +147,7 @@ export default function HomePage() {
               <p className="font-serif text-2xl font-semibold text-primary">
                 Transformation at scale
               </p>
+
               <p className="text-xs text-muted-foreground">
                 Across healthcare operations, technology, workforce and service delivery
               </p>
@@ -199,7 +203,10 @@ export default function HomePage() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {featured.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+            <ProjectCard
+              key={project.slug}
+              project={project}
+            />
           ))}
         </div>
       </section>
