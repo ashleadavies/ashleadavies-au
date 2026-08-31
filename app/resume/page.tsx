@@ -355,7 +355,7 @@ export default function ResumePage() {
 
               <div className="mt-4">
                 <h4 className="font-medium">
-                  CHC33015 Certificate III in Individual Support
+                  Certificate III In Aged Care
                 </h4>
 
                 <p className="mt-1 text-sm text-muted-foreground">
