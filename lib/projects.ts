@@ -37,13 +37,13 @@ export const projects: Project[] = [
     category: "Operating Model Transformation",
 
     summary:
-      "Led a multidisciplinary deployment and adoption stream for the rollout of a Team-Based Care operating model across 26 neighbourhoods supporting 33,000+ customers, coordinating operational readiness, workforce optimisation, data readiness, communications, training and frontline adoption.",
+      "Led the Deployment Analyst and DRSWAT stream within the rollout of a Team-Based Care operating model across 26 neighbourhoods supporting 33,000+ customers, coordinating neighbourhood readiness, workforce preparation, training, go-live and frontline adoption.",
 
-    year: "2024–2025",
+    year: "2024",
 
     client: "National Home & Community Healthcare Provider",
 
-    duration: "Approx. 2 years",
+    duration: "Enterprise rollout",
 
     tags: [
       "Operating Model Transformation",
@@ -73,26 +73,26 @@ export const projects: Project[] = [
       "Facing growing demand for home and community care, workforce constraints and increasingly complex rostering requirements, a national healthcare provider introduced a Team-Based Care operating model supported by Biarri workforce optimisation technology. The model moved operations beyond traditional Procura-based and manual rostering processes toward a more data-driven approach to workforce planning, service allocation and scheduling. The transformation was deployed across 26 neighbourhoods supporting more than 33,000 customers and required coordinated workforce, operational, data, communication, training and change readiness before implementation.",
 
     challenge:
-      "Each neighbourhood had different workforce capacity, customer demand, service requirements, data quality and operational readiness risks that needed to be understood before deployment. Workforce planning also needed to account for different enterprise agreements and awards, employee availability, contracted hours, rostering constraints, travel requirements and customer service time windows while maintaining continuity of care and familiar care relationships. The operating model, workforce rules and supporting data also needed to be designed with the organisation's longer-term technology transformation in mind so the model could transition into Salesforce Health Cloud rather than becoming a short-term solution.",
+      "Each neighbourhood had different workforce capacity, customer demand, service requirements, data quality and operational readiness risks that needed to be understood before deployment. Workforce planning also needed to account for different enterprise agreements and awards, employee availability, contracted hours, rostering constraints, travel requirements and customer service time windows while maintaining continuity of care and familiar care relationships. The operating model, workforce rules and supporting data also needed to be considered within the organisation's longer-term technology transformation so the model could transition into Salesforce Health Cloud rather than becoming a short-term solution.",
 
     role:
-      "Initially as Deployment Consultant and subsequently as Deployment & Adoption Lead, I led a multidisciplinary deployment stream responsible for preparing neighbourhoods for implementation and adoption of the Team-Based Care operating model. I led and coordinated Deployment Analysts and DRSWAT resources, together with specialist Deployment Consultants supporting communications and data readiness. Reporting into the Program Manager, I worked closely with the Change Manager, Technology Lead, TCACO Lead, Branch Deployment Leads and the TC+ optimisation team to coordinate operational readiness, workforce and data preparation, communications, training, deployment and adoption across the programme.",
+      "Initially as Deployment Consultant and subsequently as Deployment & Adoption Lead, I led the Deployment Analyst and DRSWAT stream responsible for supporting neighbourhood readiness and deployment of the Team-Based Care operating model. Reporting into the Program Manager, I worked closely with the Change Manager, Technology Lead, TCACO Lead, Branch Deployment Leads, TC+ optimisation team and specialist communications and data resources to coordinate operational readiness, workforce preparation, training, deployment and adoption.",
 
     approach:
-      "I led a structured, cross-functional readiness and adoption approach for each neighbourhood, coordinating deployment analysts and specialist communications and data resources while working closely with programme, change, technology, branch deployment and workforce optimisation teams. Readiness assessments considered customer and service demand, workforce capability, enterprise agreement and award requirements, employee availability, contracted hours, data quality, operational capacity, competing change and implementation risk. The approach also considered continuity of care, customer preferences and familiar care relationships while ensuring the operating model and supporting workforce requirements could transition into the organisation's future Salesforce Health Cloud environment.",
+      "I led a structured readiness and adoption approach across the Deployment Analyst and DRSWAT stream while working closely with program, change, technology, branch deployment, workforce optimisation and specialist communications and data resources. Readiness assessments considered customer and service demand, workforce capability, enterprise agreement and award requirements, employee availability, contracted hours, data quality, operational capacity, competing change and implementation risk. The approach also considered continuity of care, customer preferences and familiar care relationships while supporting alignment with the organisation's future Salesforce Health Cloud environment.",
 
     activities: [
-      "Led a multidisciplinary deployment and adoption stream across the Team-Based Care programme",
-      "Led and coordinated Deployment Analysts and DRSWAT resources supporting neighbourhood readiness and deployment",
-      "Coordinated specialist Deployment Consultant support across communications and data readiness",
+      "Led the Deployment Analyst and DRSWAT stream supporting Team-Based Care readiness and deployment",
+      "Directed neighbourhood readiness, workforce preparation, training, go-live and adoption activities",
       "Worked closely with the Program Manager, Change Manager, Technology Lead, TCACO Lead, Branch Deployment Leads and TC+ optimisation team",
+      "Collaborated with specialist communications and data resources supporting program delivery",
       "Led operational readiness assessments across 26 neighbourhoods",
       "Oversaw analysis of workforce demand, utilisation, capacity and service requirements",
       "Assessed workforce constraints including enterprise agreements, awards, contracted hours, employee availability and rostering requirements",
       "Coordinated identification and remediation of workforce, capability, service and data gaps ahead of deployment",
       "Partnered with operational leaders on workforce optimisation and implementation readiness",
       "Oversaw validation of customer care plans, service information and operational data",
-      "Coordinated data readiness, communications, training and frontline adoption activities",
+      "Coordinated training and frontline adoption activities",
       "Considered continuity of care, familiar care relationships and customer preferences within readiness planning",
       "Supported operational preparation for optimised roster and schedule generation through Biarri",
       "Supported processes for ongoing roster maintenance and management of operational disruptions",
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     ],
 
     publishedOutcomesContext:
-      "Independent program-level results reported by Biarri following implementation of its workforce optimisation technology with Australian Unity. These outcomes reflect the broader transformation programme and are shown separately from my individual project contribution.",
+      "Independent program-level results reported by Biarri following implementation of its workforce optimisation technology with Australian Unity. These outcomes reflect the broader transformation program and are shown separately from my individual project contribution.",
 
     publishedOutcomesSource:
       "Biarri Home Care Scheduling + Rostering - Australian Unity Case Study",
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     ],
 
     lessons:
-      "Successful workforce transformation requires more than implementing optimisation technology. The operating model needed to account for workforce agreements, customer needs, workforce capability, data quality, operational realities and future technology architecture. Leading deployment across multiple specialist streams also reinforced the importance of clear cross-functional coordination, defined ownership and practical readiness planning when translating a complex operating model into sustainable frontline ways of working.",
+      "Successful workforce transformation requires more than implementing optimisation technology. The operating model needed to account for workforce agreements, customer needs, workforce capability, data quality, operational realities and future technology architecture. Leading a key deployment stream within a complex cross-functional program reinforced the importance of clear ownership, strong collaboration and practical readiness planning when translating a new operating model into sustainable frontline ways of working.",
   },
 
   {
@@ -165,7 +165,7 @@ export const projects: Project[] = [
     category: "Healthcare Transformation & Deployment",
 
     summary:
-      "Supported operational and data readiness for a national Salesforce Health Cloud transformation spanning Home Health, Community Nursing and Allied Healthcare, connecting customer, workforce and service delivery data across a complex healthcare ecosystem.",
+      "Delivered operational and data readiness for a phased Salesforce Health Cloud transformation spanning Home Health, Community Nursing and Allied Healthcare, including 45,000+ customer records, 4,000+ employees and 53+ neighbourhood deployments.",
 
     year: "2025–2026",
 
@@ -197,7 +197,7 @@ export const projects: Project[] = [
     ],
 
     overview:
-      "A national home and community healthcare provider commenced a phased transformation to Salesforce Health Cloud to modernise customer management, care coordination and service delivery. The programme spanned Home Health, Community Nursing and Allied Healthcare operations, supporting an ecosystem of more than 4,000 employees alongside external healthcare partners and providers. The transformation required alignment across customer, workforce and operational systems before neighbourhoods could safely transition through staged deployment.",
+      "A national home and community healthcare provider commenced a phased transformation to Salesforce Health Cloud to modernise customer management, care coordination and service delivery. The program spanned Home Health, Community Nursing and Allied Healthcare operations, supporting an ecosystem of more than 4,000 employees alongside external healthcare partners and providers. The transformation required alignment across customer, workforce and operational systems before neighbourhoods could safely transition through staged deployment.",
 
     challenge:
       "The transformation extended well beyond technology migration. Customer records, care and service requirements, workforce capability, employee information and operational processes were distributed across multiple enterprise platforms and required validation and alignment before deployment. Any unresolved gaps had the potential to affect customer services, workforce readiness and frontline operations after go-live.",
@@ -239,7 +239,6 @@ export const projects: Project[] = [
     technology: [
       "Salesforce Health Cloud",
       "Procura (AlayaCare)",
-      "AlayaCare",
       "SAP SuccessFactors Employee Central",
       "Jira",
       "Confluence",
@@ -332,10 +331,7 @@ export const projects: Project[] = [
       },
     ],
 
-    technology: [
-      "Microsoft Excel",
-      "Jira",
-    ],
+    technology: ["Microsoft Excel", "Jira"],
 
     lessons:
       "Effective UAT depends on designing a process around the people who need to participate, not simply the testing platform available. Creating an accessible testing framework enabled broader stakeholder participation while preserving traceability, ownership, governance and release confidence.",
@@ -349,7 +345,7 @@ export const projects: Project[] = [
     category: "Digital Service Transformation",
 
     summary:
-      "Delivered business analysis and operational readiness for the redesign of a cloud-based IVR experience integrated with Salesforce CTI, improving customer routing, frontline context and release confidence.",
+      "Delivered business analysis and operational readiness for the redesign and deployment of a Genesys Cloud IVR supporting a national mental health partnership, integrated with Salesforce CTI and delivered with zero critical production defects.",
 
     year: "2026",
 
@@ -358,6 +354,7 @@ export const projects: Project[] = [
     duration: "4 months",
 
     tags: [
+      "Mental Health",
       "Business Analysis",
       "Genesys Cloud",
       "Salesforce CTI",
@@ -442,7 +439,7 @@ export const projects: Project[] = [
     category: "Acquisition & Operational Integration",
 
     summary:
-      "Supported operational readiness and deployment for the integration of an acquired healthcare provider, coordinating customer, workforce and service migration into a single national care management platform.",
+      "Coordinated operational readiness for the integration of an acquired healthcare provider across 40+ neighbourhoods, supporting customer, workforce and service migration into a single national care management platform while maintaining continuity of care.",
 
     year: "2025",
 
