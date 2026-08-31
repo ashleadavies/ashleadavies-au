@@ -1,10 +1,18 @@
 import type { Metadata } from "next"
-import { BarChart3, Boxes, Brain, ClipboardList, GitBranch, Users } from "lucide-react"
+import {
+  BarChart3,
+  Boxes,
+  HeartHandshake,
+  ClipboardList,
+  GitBranch,
+  Users,
+} from "lucide-react"
 import { PageHeader } from "@/components/page-header"
 
 export const metadata: Metadata = {
   title: "Capabilities",
-  description: "Capabilities that turn strategy into operational outcomes",
+  description:
+    "Healthcare transformation capabilities spanning business analysis, operational readiness, deployment and adoption, business improvement, data readiness and stakeholder engagement.",
 }
 
 const skillGroups = [
@@ -12,14 +20,16 @@ const skillGroups = [
     icon: ClipboardList,
     title: "Business Analysis",
     skills: [
+      "Requirements elicitation",
       "Business requirements",
       "Process mapping",
       "Current & future state",
-      "Stakeholder engagement",
       "User stories",
-      "Functional specifications",
-      "UAT planning",
-      "Traceability",
+      "Acceptance criteria",
+      "Functional requirements",
+      "UAT planning & coordination",
+      "Root cause analysis",
+      "Business process improvement",
     ],
   },
   {
@@ -27,98 +37,118 @@ const skillGroups = [
     title: "Operational Readiness",
     skills: [
       "Readiness assessments",
-      "Go-live planning",
+      "Operational impact assessment",
+      "Go-live readiness",
       "Cutover planning",
-      "Hypercare",
-      "Risk management",
       "Operational acceptance",
+      "Risk & dependency management",
       "Workforce readiness",
       "Business continuity",
+      "Hypercare",
+      "Post-deployment remediation",
     ],
   },
   {
     icon: Boxes,
-    title: "Transformation Delivery",
+    title: "Deployment & Adoption",
     skills: [
-      "Change implementation",
-      "Service transformation",
-      "Business improvement",
+      "Enterprise deployment",
       "Deployment planning",
-      "Benefits realisation",
+      "Change implementation",
+      "Frontline adoption",
+      "Training coordination",
+      "Stakeholder readiness",
+      "Go-live support",
       "Cross-functional delivery",
-      "Governance",
+      "Implementation risk management",
+      "Sustainable adoption",
     ],
   },
   {
-    icon: Brain,
-    title: "Customer & Service Improvement",
+    icon: HeartHandshake,
+    title: "Healthcare & Service Transformation",
     skills: [
-      "Customer journey improvement",
-      "Service design",
-      "Process improvement",
-      "Operational efficiency",
+      "Healthcare transformation",
+      "Service transformation",
       "Customer experience",
+      "Customer journey improvement",
+      "Continuity of care",
+      "Workforce optimisation",
+      "Service delivery improvement",
+      "Operational efficiency",
+      "Business improvement",
       "Continuous improvement",
-      "Data-driven decision making",
     ],
   },
   {
     icon: BarChart3,
     title: "Data & Insights",
     skills: [
-      "Data migration readiness",
+      "Data readiness",
       "Data quality",
-      "Reporting",
-      "KPI development",
-      "Power Query",
-      "Pivot tables",
-      "Tableau Dashboard Development",
+      "Data validation",
+      "Customer data",
+      "Workforce data",
+      "Data migration readiness",
+      "Data remediation",
+      "Operational reporting",
       "Microsoft Excel (Advanced)",
-      "Business Reporting & Insights",
+      "Tableau",
     ],
   },
   {
     icon: Users,
-    title: "Leadership & Facilitation",
+    title: "Stakeholder & Delivery Leadership",
     skills: [
-      "Workshops",
-      "Executive stakeholder engagement",
-      "Vendor management",
+      "Stakeholder engagement",
+      "Workshop facilitation",
       "Cross-functional leadership",
-      "Facilitation",
-      "Decision making",
-      "Coaching",
+      "Operational leadership",
+      "Vendor management",
+      "Partner engagement",
+      "Issue escalation & resolution",
+      "Decision support",
+      "Collaboration",
+      "Coaching & capability uplift",
     ],
   },
 ]
 
 const specialistExperience = [
-  "Salesforce Health Cloud",
-  "Genesys Cloud",
-  "CRM Transformation",
-  "Customer & Employee Data Migration",
+  "Healthcare Transformation",
+  "Home & Community Care",
+  "Mental Health",
   "Operational Readiness",
   "Enterprise Deployment",
-  "Service Transformation",
+  "Deployment & Adoption",
+  "Workforce Optimisation",
   "Business Analysis",
-  "Healthcare Transformation",
+  "Business Improvement",
+  "CRM Transformation",
   "Contact Centre Transformation",
+  "Customer & Workforce Integration",
+  "Data Readiness & Migration",
+  "UAT & Release Readiness",
 ]
 
 const tools = [
+  "Salesforce Health Cloud",
+  "Salesforce Service Cloud",
+  "Genesys Cloud",
+  "Procura (AlayaCare)",
+  "Biarri",
+  "SAP SuccessFactors Employee Central",
   "Jira",
   "Confluence",
-  "Microsoft Excel (Advanced)",
-  "Salesforce Health Cloud",
-  "Genesys Cloud",
+  "Wrike",
+  "Microsoft Excel",
+  "Microsoft PowerPoint",
+  "Microsoft Visio",
   "Miro",
-  "Visio",
-  "Tableau Dashboard Development",
+  "Tableau",
   "SharePoint",
   "Microsoft Teams",
   "ServiceNow",
-  "Alayacare",
-  "SAP Procura",
 ]
 
 export default function SkillsPage() {
@@ -127,17 +157,24 @@ export default function SkillsPage() {
       <PageHeader
         eyebrow="Capabilities"
         title="Capabilities that turn strategy into operational outcomes"
-        description="The combination of business analysis, operational readiness, deployment leadership and customer-focused transformation that I bring to complex initiatives."
+        description="A combination of healthcare transformation, business analysis, operational readiness, deployment and adoption, business improvement and stakeholder leadership developed across frontline service delivery, operations and enterprise transformation."
       />
 
       <section className="mx-auto max-w-6xl px-5 pb-8 pt-8 lg:px-8">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group) => (
-            <div key={group.title} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <div
+              key={group.title}
+              className="rounded-2xl border border-border bg-card p-6 shadow-sm"
+            >
               <span className="flex size-10 items-center justify-center rounded-lg bg-secondary text-primary">
                 <group.icon className="size-5" />
               </span>
-              <h2 className="mt-4 font-serif text-lg font-semibold">{group.title}</h2>
+
+              <h2 className="mt-4 font-serif text-lg font-semibold">
+                {group.title}
+              </h2>
+
               <ul className="mt-4 flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <li
@@ -156,7 +193,15 @@ export default function SkillsPage() {
       <section className="mx-auto max-w-6xl px-5 py-12 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="rounded-2xl border border-border bg-card p-8">
-            <h2 className="font-serif text-2xl font-semibold tracking-tight">Specialist Experience</h2>
+            <h2 className="font-serif text-2xl font-semibold tracking-tight">
+              Specialist Experience
+            </h2>
+
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Areas where I have applied these capabilities across healthcare,
+              community services and enterprise transformation.
+            </p>
+
             <div className="mt-6 flex flex-wrap gap-2.5">
               {specialistExperience.map((item) => (
                 <span
@@ -170,7 +215,15 @@ export default function SkillsPage() {
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-8">
-            <h2 className="font-serif text-2xl font-semibold tracking-tight">Tools &amp; platforms</h2>
+            <h2 className="font-serif text-2xl font-semibold tracking-tight">
+              Tools &amp; Platforms
+            </h2>
+
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Enterprise platforms and delivery tools used across operations,
+              transformation, deployment and business analysis.
+            </p>
+
             <div className="mt-6 flex flex-wrap gap-2.5">
               {tools.map((tool) => (
                 <span
