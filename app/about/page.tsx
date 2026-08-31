@@ -18,10 +18,11 @@ export const metadata: Metadata = {
 }
 
 const serviceEnvironments = [
-  "Aged Care & Support at Home",
+    "Aged Care & Support at Home",
   "Home & Community Care",
   "Residential Aged Care",
   "Disability Services",
+  "Mental Health",
   "Allied Health",
   "Community Nursing",
   "Healthcare Operations",
