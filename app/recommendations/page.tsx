@@ -25,10 +25,10 @@ const recognitionHighlights = [
     text: "Recognised by the Business Analysis Practice Lead for delivery excellence, stakeholder engagement and capability uplift.",
   },
   {
-    title: "Experience",
-    value: "7+ Years",
-    text: "Progressed from frontline operations to business analysis, deployment leadership and enterprise transformation.",
-  },
+  title: "2026 Award",
+  value: "Proactive Risk Management",
+  text: "Recognised for proactively identifying and addressing operational risks that supported stronger customer, employee and organisational outcomes.",
+},
 ]
 
 const recommendations = [
@@ -70,14 +70,14 @@ export default function RecommendationsPage() {
       <PageHeader
         eyebrow="Recognition"
         title="Leadership Recognition"
-        description="Recognition from Business Analysis Practice Leaders and Operational Leaders, reflecting delivery, performance and contribution across business analysis, operational readiness, deployment and transformation initiatives."
+        description="Recognition from business analysis, deployment and operational leaders, reflecting delivery, performance and contribution across business analysis, operational readiness, deployment and transformation initiatives."
       />
 
       <section className="mx-auto max-w-6xl px-5 pb-8 pt-4 lg:px-8">
         <div className="grid gap-3 rounded-2xl border border-border bg-card p-4 text-center text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-4">
-          <div>7+ Years Experience</div>
-          <div>53+ National Deployments</div>
-          <div>3,000+ Employees Supported</div>
+          <div>15+ Years Healthcare & Community Services</div>
+          <div>53+ Neighborhood Deployments Supported</div>
+          <div>4,000+ Employees Supported</div>
           <div>45,000+ Customer Records Prepared</div>
         </div>
       </section>
@@ -127,12 +127,12 @@ export default function RecommendationsPage() {
           <h2 className="font-serif text-2xl font-semibold tracking-tight">Recognised across multiple leaders</h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {[
-              "Business Analysis Practice Lead",
-              "Operational Leaders",
-              "Deployment Leaders",
-              "Transformation Stakeholders",
-              "Customer Experience Programs",
-            ].map((item) => (
+  "Business Analysis Leadership",
+  "Operational Leadership",
+  "Deployment Leadership",
+  "Transformation Leadership",
+  "Cross-Functional Stakeholders",
+].map((item) => (
               <span key={item} className="rounded-full border border-border bg-background px-3 py-1 text-sm text-muted-foreground">
                 {item}
               </span>
