@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ashlea Davies — Healthcare Transformation Consultant",
     description:
-      "Healthcare transformation professional specialising in operational readiness, deployment and adoption, business improvement and business analysis across healthcare and community services.",
+      "Healthcare transformation professional specialising in business analysis, operational readiness, deployment and adoption, and business improvement across healthcare and community services.",
     images: [
       {
         url: "/og-image.jpg",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ashlea Davies — Healthcare Transformation Consultant",
     description:
-      "Healthcare transformation professional specialising in operational readiness, deployment and adoption, business improvement and business analysis across healthcare and community services.",
+      "Healthcare transformation professional specialising in business analysis, operational readiness, deployment and adoption, and business improvement across healthcare and community services.",
     images: ["/og-image.jpg"],
   },
 }
@@ -41,7 +41,7 @@ export default function HomePage() {
   const featuredSlugs = [
     "team-based-care-operating-model",
     "home-health-salesforce-transformation",
-    "genesysivr-enhancement",
+    "genesys-ivr-enhancement",
   ]
 
   const featured = featuredSlugs
@@ -55,8 +55,8 @@ export default function HomePage() {
 
   const careerProgression = [
     "Business Analyst",
-    "Deployment & Adoption Lead",
     "Deployment Consultant",
+    "Deployment & Adoption Lead",
     "Community Liaison Manager",
     "Service Coordinator",
     "Frontline Healthcare & Community Services",
@@ -78,7 +78,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-4 text-pretty text-lg font-medium text-muted-foreground sm:text-xl">
-              Healthcare Transformation · Business Improvement · Operational Readiness · Deployment & Adoption
+              Healthcare Transformation · Business Analysis · Operational Readiness · Deployment & Adoption
             </p>
 
             <h2 className="mt-6 text-balance text-2xl font-semibold leading-tight tracking-tight text-foreground sm:text-3xl">
@@ -149,7 +149,8 @@ export default function HomePage() {
               </p>
 
               <p className="text-xs text-muted-foreground">
-                Across healthcare operations, technology, workforce and service delivery
+                Across healthcare operations, technology, digital health,
+                workforce and service delivery
               </p>
             </div>
           </div>
@@ -187,8 +188,8 @@ export default function HomePage() {
 
             <p className="mt-3 max-w-2xl text-pretty text-muted-foreground">
               Selected examples spanning operating model transformation,
-              enterprise healthcare technology, operational readiness,
-              deployment and business analysis.
+              enterprise healthcare technology, digital health, operational
+              readiness, deployment and business analysis.
             </p>
           </div>
 
