@@ -716,10 +716,6 @@ export const projects: Project[] = [
         value: "1",
         label: "BRD establishing future-state requirements",
       },
-      {
-        value: "8",
-        label: "High-level business requirements defined",
-      },
     ],
 
     overview:
@@ -792,7 +788,7 @@ export const projects: Project[] = [
       "Availability & Performance Requirements",
       "Technology Dependencies",
       "Service Continuity",
-      "Vendor & Partner Governance",
+      "Vendor & Partner Engagement",
     ],
 
     lessons:
@@ -1053,9 +1049,9 @@ export const projects: Project[] = [
 
     governance: [
       "Service Ownership",
-      "Vendor Governance",
+      "Vendor & Partner Coordination",
       "Operational Risk",
-      "Process Governance",
+      "Process Ownership & Governance",
       "Access & Registration Controls",
       "Procedure Management",
       "Service Continuity",
@@ -1091,6 +1087,7 @@ export const projects: Project[] = [
       "Knowledge Management",
       "Governance",
       "Continuous Improvement",
+      "AI-Enabled Ways of Working",
     ],
 
     businessStreams: [
@@ -1101,6 +1098,7 @@ export const projects: Project[] = [
       "Capability Development",
       "Knowledge Management",
       "Continuous Improvement",
+      "AI Capability",
     ],
 
     stakeholderGroups: [
@@ -1130,8 +1128,7 @@ export const projects: Project[] = [
     ],
 
     overview:
-      "Business Analysts were working across multiple delivery squads with limited structured opportunities to collaborate, share lessons learnt or standardise artefacts. The Community of Practice created a practical forum for capability development, reusable resources, peer learning and continuous improvement.",
-
+     "Business Analysts were working across multiple delivery squads with limited structured opportunities to collaborate, share lessons learnt, explore emerging tools or standardise artefacts. The Community of Practice created a practical forum for capability development, reusable resources, peer learning, AI-enabled ways of working and continuous improvement.",
     challenge:
       "Without a central BA community, knowledge frequently remained within individual projects or squads. Artefacts were duplicated, documentation approaches varied and there was limited visibility of reusable practices or collective BA capability.",
 
@@ -1139,7 +1136,7 @@ export const projects: Project[] = [
       "As Business Analyst, I independently designed, established and facilitated the Business Analyst Community of Practice, creating its framework, collaboration environment, knowledge resources and ongoing engagement rhythm.",
 
     approach:
-      "I focused on creating a practical community rather than another meeting series. The model centred on knowledge sharing, capability development, reusable artefacts, standardisation, peer learning and continuous improvement across delivery teams.",
+      "I focused on creating a practical community rather than another meeting series. The model centred on knowledge sharing, capability development, reusable artefacts, standardisation, peer learning, emerging technology and AI-enabled ways of working, and continuous improvement across delivery teams.",
 
     activities: [
       "Established the Community of Practice framework and roadmap",
@@ -1150,6 +1147,7 @@ export const projects: Project[] = [
       "Created a central repository for BA knowledge",
       "Encouraged cross-squad collaboration and lessons learnt",
       "Used feedback and participation insights to shape future sessions",
+      "Explored and demonstrated practical Microsoft Copilot use cases to support BA research, analysis, documentation and productivity",
     ],
 
     outcomes: [
@@ -1188,6 +1186,7 @@ export const projects: Project[] = [
       "Capability Governance",
       "Continuous Improvement",
       "Cross-Squad Collaboration",
+      "AI Capability",
     ],
 
     lessons:
