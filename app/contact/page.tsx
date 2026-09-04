@@ -14,7 +14,7 @@ const details = [
   { icon: Mail, label: "Email", value: person.email, href: `mailto:${person.email}` },
   { icon: Phone, label: "Phone", value: person.phone, href: `tel:${person.phone.replace(/\s/g, "")}` },
   { icon: MapPin, label: "Location", value: person.location },
-  { icon: Globe, label: "LinkedIn", value: "linkedin.com/in/ashlea-davies-au", href: "https://www.linkedin.com" },
+  { icon: Globe, label: "LinkedIn", value: "linkedin.com/in/ashlea-davies-au", href: "https://www.linkedin.com/in/ashlea-davies-au" },
 ]
 
 export default function ContactPage() {
