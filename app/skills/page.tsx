@@ -6,13 +6,14 @@ import {
   ClipboardList,
   GitBranch,
   Users,
+  ShieldCheck,
 } from "lucide-react"
 import { PageHeader } from "@/components/page-header"
 
 export const metadata: Metadata = {
   title: "Capabilities",
   description:
-    "Healthcare transformation capabilities spanning business analysis, operational readiness, deployment and adoption, business improvement, data readiness and stakeholder engagement.",
+    "Healthcare transformation capabilities spanning business analysis, operational readiness, deployment and adoption, governance, business improvement, data readiness and stakeholder engagement.",
 }
 
 const skillGroups = [
@@ -22,12 +23,15 @@ const skillGroups = [
     skills: [
       "Requirements elicitation",
       "Business requirements",
+      "Functional requirements",
+      "Non-functional requirements",
+      "Requirements traceability",
+      "Business rules & constraints",
       "Process mapping",
       "Current & future state",
       "User stories",
       "Acceptance criteria",
-      "Functional requirements",
-      "UAT planning & coordination",
+      "Data analysis",
       "Root cause analysis",
       "Business process improvement",
     ],
@@ -65,6 +69,24 @@ const skillGroups = [
     ],
   },
   {
+    icon: ShieldCheck,
+    title: "Governance, Risk & Delivery Assurance",
+    skills: [
+      "Operational governance",
+      "Risk & issue management",
+      "Requirements traceability",
+      "Business rules & constraints",
+      "UAT governance",
+      "Defect management",
+      "Release readiness",
+      "Data quality & validation",
+      "Service continuity",
+      "Vendor & partner engagement",
+      "Privacy requirements",
+      "Security requirements",
+    ],
+  },
+  {
     icon: HeartHandshake,
     title: "Healthcare & Service Transformation",
     skills: [
@@ -93,6 +115,8 @@ const skillGroups = [
       "Data remediation",
       "Operational reporting",
       "Microsoft Excel (Advanced)",
+      "Power Query",
+      "Power BI",
       "Tableau",
     ],
   },
@@ -104,12 +128,12 @@ const skillGroups = [
       "Workshop facilitation",
       "Cross-functional leadership",
       "Operational leadership",
-      "Vendor management",
-      "Partner engagement",
+      "Vendor & partner engagement",
       "Issue escalation & resolution",
       "Decision support",
       "Collaboration",
       "Coaching & capability uplift",
+      "Community of Practice leadership",
     ],
   },
 ]
@@ -117,7 +141,11 @@ const skillGroups = [
 const specialistExperience = [
   "Healthcare Transformation",
   "Home & Community Care",
+  "Aged Care",
   "Mental Health",
+  "Hospital-in-the-Home",
+  "Digital Health",
+  "Contact Centre & Digital Channels",
   "Operational Readiness",
   "Enterprise Deployment",
   "Deployment & Adoption",
@@ -125,15 +153,18 @@ const specialistExperience = [
   "Business Analysis",
   "Business Improvement",
   "CRM Transformation",
-  "Contact Centre Transformation",
+  "Acquisition Integration",
   "Customer & Workforce Integration",
   "Data Readiness & Migration",
   "UAT & Release Readiness",
+  "AI-Enabled Ways of Working",
 ]
 
 const tools = [
   "Salesforce Health Cloud",
   "Salesforce Service Cloud",
+  "Salesforce Omni-Channel",
+  "Salesforce CTI",
   "Genesys Cloud",
   "Procura (AlayaCare)",
   "Biarri",
@@ -142,12 +173,15 @@ const tools = [
   "Confluence",
   "Wrike",
   "Microsoft Excel",
+  "Power Query",
+  "Power BI",
   "Microsoft PowerPoint",
   "Microsoft Visio",
   "Miro",
   "Tableau",
   "SharePoint",
   "Microsoft Teams",
+  "Microsoft Copilot",
   "ServiceNow",
 ]
 
@@ -157,7 +191,7 @@ export default function SkillsPage() {
       <PageHeader
         eyebrow="Capabilities"
         title="Capabilities that turn strategy into operational outcomes"
-        description="A combination of healthcare transformation, business analysis, operational readiness, deployment and adoption, business improvement and stakeholder leadership developed across frontline service delivery, operations and enterprise transformation."
+        description="A combination of healthcare transformation, business analysis, operational readiness, deployment and adoption, governance, business improvement and stakeholder leadership developed across frontline service delivery, operations and enterprise transformation."
       />
 
       <section className="mx-auto max-w-6xl px-5 pb-8 pt-8 lg:px-8">
