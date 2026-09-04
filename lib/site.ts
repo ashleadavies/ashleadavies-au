@@ -16,6 +16,7 @@ export const person = {
 
   roles: [
     "Healthcare Transformation",
+    "Business Analysis",
     "Business Improvement",
     "Operational Readiness",
     "Deployment & Adoption",
@@ -57,7 +58,7 @@ export const stats = [
   },
   {
     value: "53+",
-    label: "Neighbourhood deployments",
+    label: "Neighbourhood deployments supported",
   },
   {
     value: "15+ years",

@@ -7,7 +7,7 @@ import { person } from "@/lib/site"
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Ashlea Davies to discuss your transformation programme.",
+  description:  "Get in touch with Ashlea Davies to discuss healthcare transformation, business analysis, operational readiness, deployment and adoption, or business improvement opportunities.",
 }
 
 const details = [
@@ -23,7 +23,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Let's talk about your next transformation"
-        description="Whether you're scoping a programme or need readiness support before go-live, I'd love to hear from you."
+        description="Whether you're looking for business analysis, healthcare transformation, operational readiness, deployment and adoption, or business improvement support, I'd love to hear from you."
       />
 
       <section className="mx-auto max-w-6xl px-5 pb-20 pt-8 lg:px-8">
@@ -31,8 +31,12 @@ export default function ContactPage() {
           <div>
             <h2 className="font-serif text-xl font-semibold tracking-tight">Contact details</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-  I'm always happy to connect with hiring managers, recruiters and organisations looking for someone who can turn strategy into practical outcomes. Whether you'd like to discuss an opportunity, a transformation initiative or simply connect, I'd love to hear from you.
-</p>
+   I'm always happy to connect with hiring managers, recruiters and
+              organisations looking for someone who can turn strategy into
+              practical outcomes. Whether you'd like to discuss an opportunity,
+              a transformation initiative or simply connect, I'd love to hear
+              from you.
+            </p>
 
             <ul className="mt-8 space-y-4">
               {details.map((d) => (
