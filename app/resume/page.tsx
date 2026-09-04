@@ -6,33 +6,36 @@ import {
   Download,
   GraduationCap,
 } from "lucide-react"
+
 import { PageHeader } from "@/components/page-header"
 
 export const metadata: Metadata = {
   title: "Resume",
   description:
-    "Professional resume for Ashlea Davies, a healthcare transformation professional specialising in operational readiness, deployment and adoption, business improvement and business analysis.",
+    "Professional resume for Ashlea Davies, a healthcare transformation professional with 15+ years of experience across business analysis, operational readiness, deployment and adoption, business improvement and healthcare operations.",
 }
 
 const roles = [
-  {
-    period: "Jan 2023 – Jun 2026",
-    title: "Deployment Consultant",
-    subtitle: "Home Health | Substantive Role",
-    points: [
-      "Delivered operational readiness and deployment across large-scale healthcare transformation initiatives.",
-      "Supported 53+ neighbourhood deployments involving 45,000+ customer records and 4,000+ employees across service delivery.",
-      "Coordinated customer, workforce and service readiness, data validation, cutover preparation, go-live support and post-deployment remediation.",
-    ],
-  },
   {
     period: "Jan 2026 – Jun 2026",
     title: "Business Analyst",
     subtitle: "Technology, Digital & Transformation | Secondment",
     points: [
-      "Delivered business analysis across Salesforce, Genesys Cloud and enterprise transformation initiatives.",
-      "Facilitated discovery, requirements elicitation, process analysis, stakeholder workshops, UAT and operational readiness.",
-      "Supported customer experience, contact centre, service improvement and release readiness initiatives across healthcare environments.",
+      "Led discovery, requirements elicitation, current and future-state process analysis, stakeholder workshops, data analysis, UAT and implementation readiness across healthcare transformation initiatives.",
+      "Defined business and non-functional requirements, business rules, dependencies, user stories and acceptance criteria, translating validated discovery outcomes into traceable requirements for solution design and delivery.",
+      "Coordinated business, clinical, partner, vendor and technology stakeholders across testing, defect management, production validation, release readiness and implementation.",
+      "Worked across Salesforce, Genesys and vendor-led initiatives spanning digital mental health, contact centre transformation, channel migration, Hospital-in-the-Home service restoration and operational improvement.",
+      "Established a Business Analysis Community of Practice to strengthen collaboration, consistency, knowledge sharing and capability across the BA function, including exploration of practical Microsoft Copilot and AI-enabled ways of working.",
+    ],
+  },
+  {
+    period: "Jan 2023 – Jun 2026",
+    title: "Deployment Consultant",
+    subtitle: "Home Health | Substantive Role",
+    points: [
+      "Led and supported operational readiness across enterprise technology transformation, data migration and remediation, acquisition integration and operating-model change.",
+      "Supported 53+ neighbourhood deployments involving 45,000+ customer records and 4,000+ employees across service delivery.",
+      "Coordinated customer, workforce and service readiness, data validation, cutover preparation, go-live support, hypercare and post-deployment remediation.",
     ],
   },
   {
@@ -40,8 +43,8 @@ const roles = [
     title: "Deployment & Adoption Lead",
     subtitle: "Home Health | Secondment",
     points: [
-      "Led the Deployment Analyst and DRSWAT stream within a Team-Based Care operating model rollout across 26 neighbourhoods supporting 33,000+ customers.",
-      "Coordinated operational readiness, workforce preparation, training, go-live and frontline adoption.",
+      "Led deployment and adoption activities for the Team-Based Care operating model across 26 neighbourhoods, supporting 33,000+ customers and 2,600+ home care workers.",
+      "Coordinated Deployment Analysts, Deployment Consultants and Trainers across workforce readiness, training, go-live and frontline adoption.",
       "Worked across program, change, technology, branch deployment and workforce optimisation teams to support sustainable implementation.",
     ],
   },
@@ -72,13 +75,18 @@ const expertiseGroups = [
     title: "Business Analysis",
     items: [
       "Requirements Elicitation",
+      "Business Requirements",
+      "Functional Requirements",
+      "Non-Functional Requirements",
+      "Requirements Traceability",
+      "Business Rules & Constraints",
       "Process Mapping",
       "Current & Future State",
       "User Stories",
       "Acceptance Criteria",
-      "UAT",
+      "Data Analysis",
       "Root Cause Analysis",
-      "Process Improvement",
+      "Business Process Improvement",
     ],
   },
   {
@@ -87,11 +95,27 @@ const expertiseGroups = [
       "Operational Readiness",
       "Enterprise Deployment",
       "Deployment & Adoption",
+      "Readiness Assessments",
+      "Operational Impact Assessment",
       "Cutover Planning",
       "Go-Live Readiness",
       "Hypercare",
       "Workforce Readiness",
       "Risk & Dependency Management",
+    ],
+  },
+  {
+    title: "Governance & Delivery Assurance",
+    items: [
+      "Operational Governance",
+      "Risk & Issue Management",
+      "UAT & Release Governance",
+      "Defect Management",
+      "Requirements Traceability",
+      "Data Quality & Validation",
+      "Service Continuity",
+      "Vendor & Partner Engagement",
+      "Privacy & Security Requirements",
     ],
   },
   {
@@ -102,6 +126,8 @@ const expertiseGroups = [
       "Workforce Optimisation",
       "Customer Experience",
       "Service Improvement",
+      "Digital Health",
+      "Contact Centre & Digital Channels",
       "Stakeholder Engagement",
       "Operational Leadership",
       "Continuous Improvement",
@@ -112,6 +138,8 @@ const expertiseGroups = [
     items: [
       "Salesforce Health Cloud",
       "Salesforce Service Cloud",
+      "Salesforce Omni-Channel",
+      "Salesforce CTI",
       "Genesys Cloud",
       "Procura (AlayaCare)",
       "Biarri",
@@ -120,11 +148,15 @@ const expertiseGroups = [
       "Confluence",
       "Wrike",
       "Microsoft Excel",
+      "Power Query",
+      "Power BI",
+      "Microsoft PowerPoint",
       "Microsoft Visio",
       "Miro",
       "Tableau",
       "SharePoint",
       "Microsoft Teams",
+      "Microsoft Copilot",
       "ServiceNow",
     ],
   },
@@ -190,24 +222,24 @@ export default function ResumePage() {
           </h2>
 
           <p className="mt-4 text-pretty text-sm leading-relaxed text-foreground/80">
-            Healthcare transformation and business improvement professional
-            with 15+ years&apos; experience spanning frontline healthcare,
-            community service operations, operational leadership, enterprise
-            deployment, change and adoption, and business analysis.
+            Healthcare transformation and operations professional with 15+
+            years&apos; experience spanning frontline healthcare, community
+            services, service coordination, operational leadership, enterprise
+            deployment, deployment and adoption, and business analysis.
           </p>
 
           <p className="mt-4 text-pretty text-sm leading-relaxed text-foreground/80">
             My career progression from frontline service delivery through
-            coordination and operational leadership into deployment and
-            enterprise transformation gives me a practical understanding of
-            how strategy, technology, workforce and customer needs intersect.
-            I specialise in translating complex change into operationally
-            practical outcomes that can be successfully implemented and
-            sustained.
+            coordination and operational leadership into enterprise deployment,
+            adoption and business analysis gives me a practical end-to-end
+            understanding of how strategy, technology, workforce, customer
+            needs and operational delivery intersect. I specialise in
+            translating complex transformation into practical, measurable and
+            sustainable outcomes.
           </p>
         </div>
 
-        {/* Career Highlights */}
+        {/* Professional Experience */}
         <div className="rounded-2xl border border-border bg-card p-8">
           <div className="flex items-center gap-3">
             <Briefcase className="size-5 text-primary" />
@@ -262,14 +294,14 @@ export default function ResumePage() {
 
           <div className="mt-8 rounded-xl border border-border/60 bg-background/70 px-4 py-4">
             <p className="text-sm font-semibold text-foreground">
-              Earlier Healthcare & Community Services Experience
+              Earlier Healthcare & Community Services Experience | 2011–2019
             </p>
 
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              Earlier roles across community care, disability support,
-              residential aged care and health services established the
-              frontline service delivery experience that underpins my approach
-              to operational transformation.
+              Earlier roles across public healthcare, community care,
+              disability support, residential aged care and health services
+              established the frontline service delivery experience that
+              underpins my approach to operational transformation.
             </p>
           </div>
         </div>
@@ -302,7 +334,7 @@ export default function ResumePage() {
           </div>
         </div>
 
-        {/* Selected Achievements */}
+        {/* Transformation at Scale */}
         <div className="rounded-2xl border border-border bg-card p-8">
           <h2 className="font-serif text-2xl font-semibold tracking-tight">
             Transformation at Scale
@@ -355,7 +387,7 @@ export default function ResumePage() {
 
               <div className="mt-4">
                 <h4 className="font-medium">
-                  Certificate III In Aged Care
+                  Certificate III in Aged Care
                 </h4>
 
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -415,7 +447,7 @@ export default function ResumePage() {
           </div>
         </div>
 
-        {/* Closing Summary */}
+        {/* Career Focus */}
         <div className="rounded-2xl border border-border bg-card p-8">
           <h2 className="font-serif text-2xl font-semibold tracking-tight">
             Career Focus
@@ -425,9 +457,9 @@ export default function ResumePage() {
             I bring together frontline healthcare experience, operational
             knowledge and enterprise transformation capability to help
             organisations move from strategy to successful implementation. My
-            strengths sit at the intersection of operational readiness,
-            deployment and adoption, business improvement, stakeholder
-            engagement and business analysis.
+            strengths sit at the intersection of healthcare transformation,
+            business analysis, operational readiness, deployment and adoption,
+            business improvement and stakeholder engagement.
           </p>
 
           <p className="mt-4 text-pretty text-sm leading-relaxed text-foreground/80">

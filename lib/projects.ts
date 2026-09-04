@@ -1058,7 +1058,7 @@ export const projects: Project[] = [
     ],
 
     lessons:
-      "Operational service failures are not always technology failures. This initiative reinforced the importance of clear ownership, accurate procedures, preserved organisational knowledge and effective partner and vendor governance when maintaining critical healthcare services.",
+  "Operational service failures are not always technology failures. This initiative reinforced the importance of clear ownership, accurate procedures, preserved organisational knowledge and effective partner and vendor coordination when maintaining critical healthcare services.",
   },
 
   // =========================================================
