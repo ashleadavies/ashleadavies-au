@@ -18,15 +18,18 @@ export const metadata: Metadata = {
 }
 
 const serviceEnvironments = [
-    "Aged Care & Support at Home",
+  "Healthcare",
+  "Aged Care & Support at Home",
   "Home & Community Care",
   "Residential Aged Care",
-  "Disability Services",
-  "Mental Health",
-  "Allied Health",
   "Community Nursing",
-  "Healthcare Operations",
+  "Allied Health",
+  "Mental Health",
+  "Hospital-in-the-Home",
+  "Disability Services",
   "Community Services",
+  "Digital Health",
+  "Contact Centre & Digital Channels",
 ]
 
 const values = [
@@ -37,8 +40,8 @@ const values = [
   },
   {
     icon: HeartHandshake,
-    title: "Operational readiness",
-    body: "Preparing organisations, teams and technology for successful adoption through planning, risk management, workforce readiness and implementation support.",
+    title: "Operational readiness & governance",
+    body: "Preparing organisations, teams and technology for successful adoption through structured planning, risk and issue management, workforce readiness, implementation governance and go-live support.",
   },
   {
     icon: ShieldCheck,
@@ -95,10 +98,10 @@ export default function AboutPage() {
           {/* About content */}
           <div className="space-y-6 text-pretty text-lg leading-relaxed text-foreground/80">
             <p>
-              My career has progressed across 15+ years from frontline
-              healthcare and community service delivery through service
-              coordination, operational leadership, enterprise deployment,
-              deployment and adoption, and business analysis. That journey
+              Over more than 15 years, my career has progressed from frontline 
+              healthcare and community service delivery through service coordination,
+              operational leadership, enterprise deployment, deployment and adoption, 
+              and business analysis. That journey
               gives me a practical end-to-end perspective on transformation
               and allows me to bridge strategy, technology, customer outcomes
               and frontline operations so change is practical, measurable and
@@ -106,12 +109,10 @@ export default function AboutPage() {
             </p>
 
             <p>
-              I help organisations move from strategy to successful delivery
-              by bringing together business analysis, business improvement,
-              operational readiness, stakeholder engagement and deployment
-              planning. My role is creating the conditions that allow
-              technology, people, processes and operational change to succeed
-              together.
+              I help organisations move from strategy to successful delivery by bringing together business analysis, 
+              business improvement, operational readiness, governance, stakeholder engagement and deployment planning. 
+              My role is creating the conditions that allow technology, people, processes and operational 
+              change to succeed together.
             </p>
 
             <p>
@@ -131,16 +132,15 @@ export default function AboutPage() {
               go-live.
             </p>
 
-            {/* Industries & service environments */}
+            {/* Industry & domain experience */}
             <div className="pt-4">
               <h2 className="font-serif text-2xl font-semibold text-foreground">
-                Industries & service environments
+                Industry & domain experience
               </h2>
 
               <p className="mt-2 text-base text-muted-foreground">
-                Experience spanning frontline service delivery, operational
-                leadership and enterprise transformation across healthcare and
-                community services.
+                Experience spanning frontline service delivery, operational leadership and enterprise transformation 
+                across healthcare, community services and digital health.
               </p>
 
               <div className="mt-5 flex flex-wrap gap-2">
